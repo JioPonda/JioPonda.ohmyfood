@@ -1,0 +1,236 @@
+@import "./library/function.scss";
+
+* {
+    font-family: "Roboto" , sans-serif;
+}
+
+body {
+    @include full-size;
+    margin: 0%;
+}
+
+header {
+    @include full-size;
+}
+
+main {
+    @include full-size;
+}
+
+i {
+    font-family: FontAwesome;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+@media screen and (max-width : 992px) {
+        
+    nav {
+        display: flex;
+        flex-direction: column;
+        background-color: $light-grey;
+
+        & img {
+            height: 90px;
+            width: 40%;
+            margin-left: 25%;
+            padding: 5%;
+        }
+
+        & i {
+            position: absolute;
+            font-size: 40px;
+            margin: 30px 0% 0% 30%;
+        }
+
+        & input { 
+            width: 100%;
+            height: 100px;
+            text-align: center;
+            font-weight: bold;
+            font-size: 30px;
+            color: black;
+            background-color: lightgrey;
+            border-color: lightgrey;
+        }
+    }    
+
+    .explore {
+        @include column;
+        @include all-center;
+        @include full-size;
+        padding: 50px 0 50px 0;
+        background-color: $light-grey;
+
+        & h1 {
+            width: 50%;
+            text-align: center;
+            font-weight: bolder;
+            font-size: 53px;
+        }
+
+        & p {
+            width: 80%;
+            margin-top: -20px;
+            text-align: center;
+            font-weight: 200;
+            font-size: 46px;
+        }
+
+        & a {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 50%;
+            height: 120px;
+            color: #fff;
+            background: linear-gradient(#ec73da,#d26adb, #{$primary-color});
+            border-radius: 60px;
+            & p {
+                margin-top: 30px;
+                font-size: 37px;
+                font-weight: bold;
+            }
+        }
+    }
+
+    .fonctionnement {
+        @include column;
+
+        & h2 {
+            @include principal-title;
+        }
+    }
+
+    .etape {
+        height: 150px;
+        width: 80%;
+        display: flex;
+        flex-direction: row;
+        @include all-center;
+        background-color: #f6f6f6;
+        border-radius: 50px;
+        box-shadow: 5px 5px 5px lightgray;
+        margin: 15px 0% 15px 10%;
+        &:hover {
+            background-color: lighten($color: $primary-color, $amount: 35);
+            box-shadow: 5px 5px 5px rgb(164, 164, 164);
+            & i {
+                color: $primary-color;
+            }
+        }
+
+        &_number {
+            display: flex;
+            @include all-center;
+            position: absolute;
+            margin-right: 80%;
+            color: #fff;
+            height: 50px;
+            width: 50px;
+            font-size: 30px;
+            background-color: $primary-color;
+            border-radius: 50px;
+        }
+
+        & i {
+            position: absolute;
+            margin-right: 60%;
+            color: grey;
+            font-size: 50px;
+        }
+
+        &_txt {
+            text-align: center;
+            font-size: 40px;
+            font-weight: bold;
+        }
+    }
+
+    main {
+        background-color: $light-grey;
+        padding: 5% 0 5% 0;
+        margin-top: 50px;
+
+        & h2 {
+            @include principal-title;
+        }
+
+        & article {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 700px;
+            width: 90%;
+            overflow: hidden;
+            background-color: white;
+            margin: 5% 0 5% 5%;
+            border-radius: 50px;
+
+            & a {
+                @include full-size
+            }
+
+            & .New {
+                position: absolute;
+                font-weight: bolder;
+                color: darken($color: $third-color, $amount: 40);
+                background-color: $third-color;
+                padding: 1%;
+                font-size: 35px;
+                margin-top: 30px;
+                margin-left: 70%;
+            }
+
+            & .New-hide {
+                display: none;
+            }
+
+            & .img-container {
+                height: 75%;
+                width: 100%;
+                & img {
+                    @include full-size
+                }
+            }
+
+            & .card-infos {
+                font-size: 40px;
+                margin: -25px 0 0 3%;
+                & .city {
+                    margin-top: -18px;
+                }
+                & .fa-heart {
+                    font-size: 70px;
+                    position: absolute;
+                    margin: -140px 0 0 75%;
+                }
+            }
+        }
+
+    }
+
+    footer {
+        @include column;
+        background-color: #353535;
+        font-size: 40px;
+        & img {
+           height: 50px;
+           width: 80%;
+           margin: 50px 0 0 -22% ;
+        }
+
+        & a {
+            color: white;
+            padding: 2% 0 2% 0;
+        }
+    }
+
+}

@@ -1,0 +1,17 @@
+* {
+  font-family: "Roboto" , sans-serif;
+}
+
+i {
+  font-family: FontAwesome;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+/*# sourceMappingURL=style_menu.css.map */
