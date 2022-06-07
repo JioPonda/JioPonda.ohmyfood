@@ -112,6 +112,8 @@ a {
     background: -webkit-gradient(linear, left top, left bottom, from(#ec73da), color-stop(#d26adb), to(#9356DC));
     background: linear-gradient(#ec73da, #d26adb, #9356DC);
     border-radius: 60px;
+    -webkit-box-shadow: 7px 7px 7px #a4a4a4;
+            box-shadow: 7px 7px 7px #a4a4a4;
   }
   .explore a p {
     margin-top: 30px;
@@ -150,14 +152,14 @@ a {
             align-items: center;
     background-color: #f6f6f6;
     border-radius: 50px;
-    -webkit-box-shadow: 5px 5px 5px lightgray;
-            box-shadow: 5px 5px 5px lightgray;
+    -webkit-box-shadow: 7px 7px 7px lightgray;
+            box-shadow: 7px 7px 7px lightgray;
     margin: 15px 0% 15px 10%;
   }
   .etape:hover {
     background-color: #f2eafb;
-    -webkit-box-shadow: 5px 5px 5px #a4a4a4;
-            box-shadow: 5px 5px 5px #a4a4a4;
+    -webkit-box-shadow: 7px 7px 7px #a4a4a4;
+            box-shadow: 7px 7px 7px #a4a4a4;
   }
   .etape:hover i {
     color: #9356DC;
@@ -218,6 +220,12 @@ a {
     background-color: white;
     margin: 5% 0 5% 5%;
     border-radius: 50px;
+    -webkit-box-shadow: 7px 7px 7px lightgray;
+            box-shadow: 7px 7px 7px lightgray;
+  }
+  main article:hover {
+    -webkit-box-shadow: 7px 7px 7px #a4a4a4;
+            box-shadow: 7px 7px 7px #a4a4a4;
   }
   main article a {
     height: 100%;
@@ -251,10 +259,31 @@ a {
   main article .card-infos .city {
     margin-top: -18px;
   }
-  main article .card-infos .fa-heart {
-    font-size: 70px;
+  main article .card-infos .heart_empty {
     position: absolute;
-    margin: -140px 0 0 75%;
+    display: block;
+    font-size: 70px;
+    margin: -150px 0 0 73%;
+    padding: 1%;
+    opacity: 1;
+  }
+  main article .card-infos .heart_full {
+    position: absolute;
+    color: #9356DC;
+    display: block;
+    font-size: 73px;
+    margin: -151px 0 0 73%;
+    padding: 1%;
+    background: -webkit-linear-gradient(#9356DC, #d26adb, #ec73da);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    z-index: 1;
+    opacity: 0;
+  }
+  main article .card-infos .heart_full:hover {
+    -webkit-transition-duration: 0.2s;
+            transition-duration: 0.2s;
+    opacity: 1;
   }
   footer {
     display: -webkit-box;
@@ -267,10 +296,14 @@ a {
     background-color: #353535;
     font-size: 40px;
   }
-  footer img {
-    height: 50px;
-    width: 80%;
-    margin: 50px 0 0 -22%;
+  footer h2 {
+    font-family: 'Shrikhand';
+    color: white;
+    font-size: 60px;
+    margin: 25px 0 0 4%;
+  }
+  footer ul {
+    margin-top: 15px;
   }
   footer a {
     color: white;

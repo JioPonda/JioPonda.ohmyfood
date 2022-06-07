@@ -94,6 +94,7 @@ a {
             color: #fff;
             background: linear-gradient(#ec73da,#d26adb, #{$primary-color});
             border-radius: 60px;
+            @include shadow;
             & p {
                 margin-top: 30px;
                 font-size: 37px;
@@ -118,11 +119,11 @@ a {
         @include all-center;
         background-color: #f6f6f6;
         border-radius: 50px;
-        box-shadow: 5px 5px 5px lightgray;
+        @include light-shadow;
         margin: 15px 0% 15px 10%;
         &:hover {
             background-color: lighten($color: $primary-color, $amount: 35);
-            box-shadow: 5px 5px 5px rgb(164, 164, 164);
+            @include shadow;
             & i {
                 color: $primary-color;
             }
@@ -174,6 +175,10 @@ a {
             background-color: white;
             margin: 5% 0 5% 5%;
             border-radius: 50px;
+            @include light-shadow;
+            &:hover{
+                @include shadow;
+            }
 
             & a {
                 @include full-size
@@ -205,13 +210,35 @@ a {
             & .card-infos {
                 font-size: 40px;
                 margin: -25px 0 0 3%;
+                
                 & .city {
                     margin-top: -18px;
                 }
-                & .fa-heart {
-                    font-size: 70px;
+                
+
+                & .heart_empty {
                     position: absolute;
-                    margin: -140px 0 0 75%;
+                    display: block;
+                    font-size: 70px;
+                    margin: -150px 0 0 73%;
+                    padding: 1%;
+                    opacity: 1;
+
+                }
+                & .heart_full {
+                    position: absolute;
+                    color: $primary-color;
+                    display: block;
+                    font-size: 73px;
+                    margin: -151px 0 0 73%;
+                    padding: 1%;
+                    @include gradient-heart;
+                    z-index: 1;
+                    opacity: 0;
+                    &:hover {
+                        transition-duration: 0.2s;
+                        opacity: 1
+                    }
                 }
             }
         }
@@ -222,10 +249,15 @@ a {
         @include column;
         background-color: #353535;
         font-size: 40px;
-        & img {
-           height: 50px;
-           width: 80%;
-           margin: 50px 0 0 -22% ;
+        & h2 {
+            font-family: 'Shrikhand';
+            color: white;
+            font-size: 60px;
+            margin : 25px 0 0 4%;
+        }
+
+        & ul {
+            margin-top: 15px;
         }
 
         & a {
