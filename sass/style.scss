@@ -224,7 +224,7 @@ a {
                 }
                 
 
-                & .heart_empty {
+                & .heart-empty {
                     position: absolute;
                     display: block;
                     font-size: 70px;
@@ -233,12 +233,12 @@ a {
                     opacity: 1;
 
                 }
-                & .heart_full {
+                & .heart-full {
                     position: absolute;
                     color: $primary-color;
                     display: block;
                     font-size: 73px;
-                    margin: -151px 0 0 72.9%;
+                    margin: -152px 0 0 72.9%;
                     padding: 1%;
                     @include gradient-heart;
                     z-index: 1;
@@ -355,7 +355,7 @@ a {
                     margin-top: -42px;
                 }
                 
-                & .heart_full {
+                & .heart-full {
                     margin: -152px 0 0 72.9%;
                 }
             }
@@ -474,12 +474,12 @@ a {
                     margin-top: -25px;
                 }    
 
-                & .heart_empty {
+                & .heart-empty {
                     font-size: 50px;
                     margin: -88px 0 0 70%;
                 }
                 
-                & .heart_full {
+                & .heart-full {
                     font-size: 53px;
                     margin: -90px 0 0 69.5%;
                 }

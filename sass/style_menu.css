@@ -2,6 +2,22 @@
   font-family: "Roboto" , sans-serif;
 }
 
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0%;
+}
+
+header {
+  height: 100%;
+  width: 100%;
+}
+
+main {
+  height: 100%;
+  width: 100%;
+}
+
 i {
   font-family: FontAwesome;
 }
@@ -13,5 +29,93 @@ ul {
 a {
   text-decoration: none;
   color: black;
+}
+
+@media screen and (max-width: 992px) {
+  nav {
+    padding: 30px 0px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 100%;
+    width: 100%;
+    background-color: #f2f2f2;
+  }
+  nav i {
+    font-size: 65px;
+    margin-left: -250%;
+  }
+  nav img {
+    height: 100px;
+    width: 50%;
+  }
+  main {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    overflow: hidden;
+  }
+  main img {
+    height: 600px;
+    width: 100%;
+    margin-top: -15px;
+  }
+  main section {
+    width: 100%;
+    background-color: #f2f2f2;
+    margin-top: -105px;
+    border-top-left-radius: 90px;
+    border-top-right-radius: 90px;
+  }
+  main section .restaurant-name {
+    margin-left: 5%;
+    width: 100%;
+  }
+  main section .restaurant-name h1 {
+    font-family: 'Shrikhand';
+    font-size: 50px;
+  }
+  main section .restaurant-name .heart-empty {
+    position: absolute;
+  }
+  footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+    background-color: #353535;
+    font-size: 40px;
+  }
+  footer h2 {
+    font-family: 'Shrikhand';
+    color: white;
+    font-size: 60px;
+    margin: 25px 0 0 4%;
+  }
+  footer ul {
+    margin-top: 15px;
+  }
+  footer a {
+    color: white;
+    padding: 2% 0 2% 0;
+  }
 }
 /*# sourceMappingURL=style_menu.css.map */
