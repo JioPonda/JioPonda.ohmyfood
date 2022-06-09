@@ -274,7 +274,7 @@ a {
   main article .card-infos .city {
     margin-top: -28px;
   }
-  main article .card-infos .heart_empty {
+  main article .card-infos .heart-empty {
     position: absolute;
     display: block;
     font-size: 70px;
@@ -282,12 +282,12 @@ a {
     padding: 1%;
     opacity: 1;
   }
-  main article .card-infos .heart_full {
+  main article .card-infos .heart-full {
     position: absolute;
     color: #9356DC;
     display: block;
     font-size: 73px;
-    margin: -151px 0 0 72.9%;
+    margin: -152px 0 0 72.9%;
     padding: 1%;
     background: -webkit-linear-gradient(#9356DC, #d26adb, #ec73da);
     -webkit-background-clip: text;
@@ -295,7 +295,7 @@ a {
     z-index: 1;
     opacity: 0;
   }
-  main article .card-infos .heart_full:hover {
+  main article .card-infos .heart-full:hover {
     -webkit-transition-duration: 0.2s;
             transition-duration: 0.2s;
     opacity: 1;
@@ -375,7 +375,7 @@ a {
   main article .card-infos .city {
     margin-top: -42px;
   }
-  main article .card-infos .heart_full {
+  main article .card-infos .heart-full {
     margin: -152px 0 0 72.9%;
   }
 }
@@ -467,11 +467,11 @@ a {
   main article .card-infos .city {
     margin-top: -25px;
   }
-  main article .card-infos .heart_empty {
+  main article .card-infos .heart-empty {
     font-size: 50px;
     margin: -88px 0 0 70%;
   }
-  main article .card-infos .heart_full {
+  main article .card-infos .heart-full {
     font-size: 53px;
     margin: -90px 0 0 69.5%;
   }

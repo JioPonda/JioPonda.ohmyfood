@@ -1,9 +1,24 @@
+@import "./library/function.scss";
+
 $primary-color : #9356DC;
 $secondary-color : #FF79DA;
 $third-color : #99E2D0;
 
 * {
     font-family: "Roboto" , sans-serif;
+}
+
+body {
+    @include full-size;
+    margin: 0%;
+}
+
+header {
+    @include full-size;
+}
+
+main {
+    @include full-size;
 }
 
 i {
@@ -21,6 +36,84 @@ a {
 
 @media screen and (max-width : 992px) {
         
+    nav {
+        padding: 30px 0px;
+        display: flex;
+        flex-direction: row;
+        @include all-center;
+        @include full-size;
+        background-color: $light-grey;
+        & i {
+            font-size: 65px;
+            margin-left: -250%;
+        }
+        & img {
+            height: 100px;
+            width: 50%;
+        }
+    }
 
+    main {
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+        & img {
+          height: 600px;
+          width: 100%;
+          margin-top: -15px;  
+        }
+        & section {
+            width: 100%;
+            background-color: $light-grey;
+            margin-top: -105px;
+            border-top-left-radius: 90px;
+            border-top-right-radius: 90px;
+            & .restaurant-name{
+                margin-left: 5%;
+                width: 100%;
+                & h1 {
+                    font-family: 'Shrikhand';
+                    font-size: 50px
+                }
+                & .heart-empty {
+                    position: absolute
+                }
+                & .heart-full {
+                    
+                }
+            }
 
+            & .menu {
+                & p {
+
+                }
+                & .dish-card {
+    
+                }
+            }
+            
+        }
+    }
+
+    footer {
+        @include column;
+        width: 100%;
+        background-color: #353535;
+        font-size: 40px;
+        & h2 {
+            font-family: 'Shrikhand';
+            color: white;
+            font-size: 60px;
+            margin : 25px 0 0 4%;
+        }
+
+        & ul {
+            margin-top: 15px;
+        }
+
+        & a {
+            color: white;
+            padding: 2% 0 2% 0;
+        }
+    }
 }
