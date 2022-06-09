@@ -46,15 +46,15 @@ a {
     background-color: #f2f2f2;
   }
   nav img {
-    height: 90px;
+    height: 100px;
     width: 50%;
     margin-left: 20%;
     padding: 5%;
   }
   nav i {
     position: absolute;
-    font-size: 40px;
-    margin: 30px 0% 0% 30%;
+    font-size: 50px;
+    margin: 22px 0% 0% 26%;
   }
   nav input {
     display: -webkit-box;
@@ -70,7 +70,7 @@ a {
     height: 100px;
     text-align: center;
     font-weight: bold;
-    font-size: 30px;
+    font-size: 50px;
     color: black;
     background-color: lightgrey;
     border-color: lightgrey;
@@ -95,10 +95,10 @@ a {
     background-color: #f2f2f2;
   }
   .explore h1 {
-    width: 50%;
+    width: 100%;
     text-align: center;
     font-weight: bolder;
-    font-size: 53px;
+    font-size: 82px;
   }
   .explore p {
     width: 80%;
@@ -287,7 +287,7 @@ a {
     color: #9356DC;
     display: block;
     font-size: 73px;
-    margin: -151px 0 0 73%;
+    margin: -151px 0 0 72.9%;
     padding: 1%;
     background: -webkit-linear-gradient(#9356DC, #d26adb, #ec73da);
     -webkit-background-clip: text;
@@ -329,6 +329,15 @@ a {
 
 /* 820px */
 @media screen and (max-width: 820px) {
+  nav img {
+    height: 100px;
+    width: 55%;
+    margin-left: 15%;
+    padding: 5%;
+  }
+  nav i {
+    margin: 22px 0% 0% 21%;
+  }
   .explore h1 {
     font-size: 50px;
   }
@@ -363,8 +372,11 @@ a {
   main article {
     height: 600px;
   }
-  main article .city {
+  main article .card-infos .city {
     margin-top: -42px;
+  }
+  main article .card-infos .heart_full {
+    margin: -152px 0 0 72.9%;
   }
 }
 
@@ -376,12 +388,145 @@ a {
     margin-left: 20%;
   }
   nav i {
-    font-size: 40px;
-    margin: 30px 0% 0% 15%;
+    font-size: 28px;
+    margin: 10px 0% 0% 20%;
   }
   nav input {
-    height: 65px;
+    height: 50px;
+    font-size: 25px;
+  }
+  .explore h1 {
+    margin-top: -20px;
+    width: 80%;
+    font-size: 28px;
+  }
+  .explore p {
+    margin-top: 0px;
+    width: 80%;
+    font-size: 19px;
+  }
+  .explore a {
+    width: 65%;
+    height: 70px;
+  }
+  .explore a p {
+    margin-top: 18px;
+    font-size: 19px;
+  }
+  .fonctionnement h2 {
+    font-size: 25px;
+  }
+  .etape {
+    height: 100px;
+    width: 80%;
+    border-radius: 40px;
+  }
+  .etape_number {
+    margin-right: 80%;
+    height: 40px;
+    width: 40px;
+    font-size: 25px;
+  }
+  .etape i {
+    margin-right: 54%;
+    font-size: 47px;
+  }
+  .etape_txt {
+    font-size: 20px;
+    margin-left: 22%;
+  }
+  main {
+    padding: 5% 0 5% 0;
+    margin-top: 50px;
+  }
+  main h2 {
+    font-size: 25px;
+  }
+  main article {
+    height: 300px;
+    width: 90%;
+    margin: 5% 0 5% 5%;
+    border-radius: 30px;
+  }
+  main article a {
+    height: 100%;
+    width: 100%;
+  }
+  main article .New {
+    font-size: 20px;
+    margin-top: 20px;
+    margin-left: 65%;
+  }
+  main article .img-container {
+    height: 70%;
+  }
+  main article .card-infos {
+    font-size: 25px;
+    margin: -20px 0 0 3%;
+  }
+  main article .card-infos .city {
+    margin-top: -25px;
+  }
+  main article .card-infos .heart_empty {
+    font-size: 50px;
+    margin: -88px 0 0 70%;
+  }
+  main article .card-infos .heart_full {
+    font-size: 53px;
+    margin: -90px 0 0 69.5%;
+  }
+  footer {
+    width: 100%;
+    font-size: 28px;
+  }
+  footer h2 {
     font-size: 30px;
+    margin: 20px 0 0 5%;
+  }
+  footer ul {
+    margin-top: 10px;
+    margin-left: -4%;
+  }
+}
+
+/* 375px */
+@media screen and (max-width: 375px) {
+  nav img {
+    height: 50px;
+    width: 60%;
+    margin-left: 15%;
+  }
+  nav i {
+    margin: 10px 0% 0% 18%;
+  }
+  .explore h1 {
+    font-size: 30px;
+  }
+  .explore p {
+    margin-top: -5px;
+    font-size: 17px;
+  }
+  .explore a p {
+    margin-top: 17px;
+    font-size: 17px;
+  }
+  .etape {
+    height: 90px;
+    border-radius: 30px;
+  }
+  .etape_number {
+    margin-right: 80%;
+    height: 40px;
+    width: 40px;
+    font-size: 25px;
+  }
+  .etape i {
+    margin-right: 55%;
+    font-size: 40px;
+  }
+  .etape_txt {
+    font-size: 18px;
+    margin-left: 15%;
   }
 }
 /*# sourceMappingURL=style.css.map */
