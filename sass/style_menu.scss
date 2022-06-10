@@ -3,15 +3,13 @@
 @keyframes slide-up-menu {
     from {
         opacity: 0;
-    }
-
-    50% {
-        opacity: 0.5;
+        // margin-top: -2500px;
     }
 
     to {
         opacity: 1;
         display: none;
+        // margin-top: 0px;
     }
 }
 
@@ -131,6 +129,8 @@ a {
                     display: flex;
                     flex-direction: column;
                     & .dish-card {
+                        animation: slide-up-menu 1.5s 0.5s;
+                        animation-fill-mode: both;
                         @include light-shadow;
                         background-color: white;
                         overflow: hidden;
