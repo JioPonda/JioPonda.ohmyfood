@@ -1,3 +1,29 @@
+@-webkit-keyframes slide-up-menu {
+  from {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  to {
+    opacity: 1;
+    display: none;
+  }
+}
+
+@keyframes slide-up-menu {
+  from {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  to {
+    opacity: 1;
+    display: none;
+  }
+}
+
 * {
   font-family: "Roboto" , sans-serif;
 }
@@ -98,8 +124,8 @@ a {
   }
   main section .restaurant-name .heart-full {
     position: absolute;
-    font-size: 73px;
-    margin: -150px 0 0 80%;
+    font-size: 75px;
+    margin: -151px 0 0 79.9%;
     padding: 1%;
     background: -webkit-linear-gradient(#9356DC, #d26adb, #ec73da);
     -webkit-background-clip: text;
@@ -155,6 +181,17 @@ a {
     -webkit-box-shadow: 7px 7px 7px #a4a4a4;
             box-shadow: 7px 7px 7px #a4a4a4;
   }
+  main section .menu article .dish-card:hover .check {
+    -webkit-transform: translateX(-80%);
+            transform: translateX(-80%);
+    -webkit-transition: -webkit-transform 0.5s;
+    transition: -webkit-transform 0.5s;
+    transition: transform 0.5s;
+    transition: transform 0.5s, -webkit-transform 0.5s;
+  }
+  main section .menu article .dish-infos {
+    width: 100%;
+  }
   main section .menu article .dish-name {
     font-size: 45px;
     margin: 15px 0 0 3%;
@@ -188,14 +225,6 @@ a {
     font-size: 50px;
     margin: 0px 0 0 35%;
     color: white;
-  }
-  main section .menu article .check:hover {
-    -webkit-transform: translateX(-80%);
-            transform: translateX(-80%);
-    -webkit-transition: -webkit-transform 0.5s;
-    transition: -webkit-transform 0.5s;
-    transition: transform 0.5s;
-    transition: transform 0.5s, -webkit-transform 0.5s;
   }
   main section .menu .order-input {
     display: -webkit-box;
@@ -244,6 +273,8 @@ a {
     margin-top: 15px;
   }
   footer a {
+    -webkit-animation: slide-up-menu 3s;
+            animation: slide-up-menu 3s;
     color: white;
     padding: 2% 0 2% 0;
   }

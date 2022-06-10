@@ -1,5 +1,20 @@
 @import "./library/function.scss";
 
+@keyframes slide-up-menu {
+    from {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 0.5;
+    }
+
+    to {
+        opacity: 1;
+        display: none;
+    }
+}
+
 $primary-color : #9356DC;
 $secondary-color : #FF79DA;
 $third-color : #99E2D0;
@@ -84,8 +99,8 @@ a {
                 }
                 & .heart-full {
                     position: absolute;
-                    font-size: 73px;
-                    margin: -150px 0 0 80%;
+                    font-size: 75px;
+                    margin: -151px 0 0 79.9%;
                     padding: 1%;
                     @include gradient-heart;
                     opacity : 0;
@@ -119,6 +134,8 @@ a {
                         @include light-shadow;
                         background-color: white;
                         overflow: hidden;
+                        // white-space: nowrap;
+                        // text-overflow: ellipsis;
                         height: 150px;
                         width: 95%;
                         border-radius: 40px;
@@ -126,8 +143,20 @@ a {
                         &:hover {
                             @include shadow;
                         }
+                        &:hover .check{
+                            transform: translateX(-80%);
+                            transition: transform 0.5s;
+                            }
+                        // &:active .check{
+                        //     transform: translateX(-80%);
+                        //     transition: transform 0.5s;
+                        //     }
                     }
                     
+                    & .dish-infos {
+                        width: 100%;
+                    }
+
                     & .dish-name {
                         font-size: 45px;
                         margin: 15px 0 0 3%;
@@ -146,7 +175,6 @@ a {
                         width: 15%;
                         height: 155px;
                         margin: -118px 0 0 100%;
-                        
                         & .dish-price {
                             font-weight: 900;
                             font-size: 35px;
@@ -157,14 +185,9 @@ a {
                             margin: 0px 0 0 35%;
                             color : white;
                         }
-
-                        &:hover {
-                            transform: translateX(-80%);
-                            transition: transform 0.5s
-                        }
-
+                        
                     }
-                    
+
                 }
                 
                 & .order-input {
@@ -208,6 +231,7 @@ a {
         }
 
         & a {
+            animation: slide-up-menu 3s;
             color: white;
             padding: 2% 0 2% 0;
         }
