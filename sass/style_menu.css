@@ -87,10 +87,140 @@ a {
   }
   main section .restaurant-name h1 {
     font-family: 'Shrikhand';
-    font-size: 50px;
+    font-size: 70px;
+    margin-top: 20px;
   }
   main section .restaurant-name .heart-empty {
     position: absolute;
+    font-size: 70px;
+    margin: -150px 0 0 80%;
+    padding: 1%;
+  }
+  main section .restaurant-name .heart-full {
+    position: absolute;
+    font-size: 73px;
+    margin: -150px 0 0 80%;
+    padding: 1%;
+    background: -webkit-linear-gradient(#9356DC, #d26adb, #ec73da);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    opacity: 0;
+  }
+  main section .restaurant-name .heart-full:hover {
+    opacity: 1;
+    -webkit-transition-duration: 0.3s;
+            transition-duration: 0.3s;
+  }
+  main section .menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-left: 5%;
+  }
+  main section .menu .step {
+    font-size: 50px;
+    font-weight: 100;
+    text-transform: uppercase;
+  }
+  main section .menu .border {
+    height: 10px;
+    width: 15%;
+    background-color: #99E2D0;
+    margin: -50px 0% 25px 0%;
+  }
+  main section .menu article {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  main section .menu article .dish-card {
+    -webkit-box-shadow: 7px 7px 7px lightgray;
+            box-shadow: 7px 7px 7px lightgray;
+    background-color: white;
+    overflow: hidden;
+    height: 150px;
+    width: 95%;
+    border-radius: 40px;
+    margin: 1% 0%;
+  }
+  main section .menu article .dish-card:hover {
+    -webkit-box-shadow: 7px 7px 7px #a4a4a4;
+            box-shadow: 7px 7px 7px #a4a4a4;
+  }
+  main section .menu article .dish-name {
+    font-size: 45px;
+    margin: 15px 0 0 3%;
+    overflow: hidden;
+  }
+  main section .menu article .dish-ingredient {
+    font-size: 40px;
+    margin: 0px 0 0 3%;
+  }
+  main section .menu article .check {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background-color: #99E2D0;
+    width: 15%;
+    height: 155px;
+    margin: -118px 0 0 100%;
+  }
+  main section .menu article .check .dish-price {
+    font-weight: 900;
+    font-size: 35px;
+    margin: 80px 0 0 -100%;
+  }
+  main section .menu article .check i {
+    font-size: 50px;
+    margin: 0px 0 0 35%;
+    color: white;
+  }
+  main section .menu article .check:hover {
+    -webkit-transform: translateX(-80%);
+            transform: translateX(-80%);
+    -webkit-transition: -webkit-transform 0.5s;
+    transition: -webkit-transform 0.5s;
+    transition: transform 0.5s;
+    transition: transform 0.5s, -webkit-transform 0.5s;
+  }
+  main section .menu .order-input {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 50%;
+    height: 120px;
+    color: #fff;
+    background: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), color-stop(#d26adb), to(#9356DC));
+    background: linear-gradient(#FF79DA, #d26adb, #9356DC);
+    font-size: 40px;
+    border-radius: 60px;
+    -webkit-box-shadow: 7px 7px 7px lightgray;
+            box-shadow: 7px 7px 7px lightgray;
+    margin: 35px 0% 35px 22%;
+  }
+  main section .menu .order-input p {
+    text-align: center;
+    font-weight: 900;
   }
   footer {
     display: -webkit-box;

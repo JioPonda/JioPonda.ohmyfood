@@ -34,7 +34,7 @@ a {
     color: black;
 }
 
-@media screen and (max-width : 992px) {
+@media screen and (max-width : #{$tablette-high}) {
         
     nav {
         padding: 30px 0px;
@@ -73,26 +73,122 @@ a {
                 width: 100%;
                 & h1 {
                     font-family: 'Shrikhand';
-                    font-size: 50px
+                    font-size: 70px;
+                    margin-top: 20px;
                 }
                 & .heart-empty {
-                    position: absolute
+                    position: absolute;
+                    font-size: 70px;
+                    margin: -150px 0 0 80%;
+                    padding: 1%;
                 }
                 & .heart-full {
-                    
+                    position: absolute;
+                    font-size: 73px;
+                    margin: -150px 0 0 80%;
+                    padding: 1%;
+                    @include gradient-heart;
+                    opacity : 0;
+                    &:hover{
+                        opacity: 1;
+                        transition-duration: 0.3s;
+                    }
                 }
             }
 
             & .menu {
-                & p {
-
+                @include column;
+                margin-left: 5%;
+                & .step {
+                    font-size: 50px;
+                    font-weight: 100;
+                    text-transform: uppercase;
                 }
-                & .dish-card {
-    
+
+                & .border{
+                    height: 10px;
+                    width: 15%;
+                    background-color: $third-color;
+                    margin: -50px 0% 25px 0%;
+                }
+                
+                & article {
+                    display: flex;
+                    flex-direction: column;
+                    & .dish-card {
+                        @include light-shadow;
+                        background-color: white;
+                        overflow: hidden;
+                        height: 150px;
+                        width: 95%;
+                        border-radius: 40px;
+                        margin: 1% 0%;
+                        &:hover {
+                            @include shadow;
+                        }
+                    }
+                    
+                    & .dish-name {
+                        font-size: 45px;
+                        margin: 15px 0 0 3%;
+                        overflow: hidden;
+                    }
+
+                    & .dish-ingredient {
+                        font-size: 40px;
+                        margin: 0px 0 0 3%;
+                    }
+
+                    & .check{
+                        display: flex;
+                        @include all-center;
+                        background-color: $third-color;
+                        width: 15%;
+                        height: 155px;
+                        margin: -118px 0 0 100%;
+                        
+                        & .dish-price {
+                            font-weight: 900;
+                            font-size: 35px;
+                            margin: 80px 0 0 -100%;
+                        }
+                        & i {
+                            font-size: 50px;
+                            margin: 0px 0 0 35%;
+                            color : white;
+                        }
+
+                        &:hover {
+                            transform: translateX(-80%);
+                            transition: transform 0.5s
+                        }
+
+                    }
+                    
+                }
+                
+                & .order-input {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    width: 50%;
+                    height: 120px;
+                    color: #fff;
+                    background: linear-gradient(#{$secondary-color},#d26adb, #{$primary-color});
+                    font-size: 40px;
+                    border-radius: 60px;
+                    @include light-shadow
+                    margin : 35px 0% 35px 22%;
+                    & p {
+                        text-align: center;
+                        font-weight: 900;
+                    }
                 }
             }
             
         }
+
+
     }
 
     footer {
