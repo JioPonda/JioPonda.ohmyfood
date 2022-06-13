@@ -530,6 +530,7 @@ a {
   }
 }
 
+/* 320px*/
 @media screen and (max-width: 320px) {
   nav i {
     margin: 10px 0% 0% 14%;

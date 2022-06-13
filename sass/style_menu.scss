@@ -222,7 +222,7 @@ a {
                     background: linear-gradient(#{$secondary-color},#d26adb, #{$primary-color});
                     font-size: 40px;
                     border-radius: 60px;
-                    @include light-shadow
+                    @include light-shadow;
                     margin : 35px 0% 35px 22%;
                     & p {
                         text-align: center;
@@ -261,4 +261,66 @@ a {
             padding: 2% 0 2% 0;
         }
     }
+}
+
+@media screen and (max-width : #{$tablette-mid}) {
+
+    main {
+        & section {
+            & .restaurant-name{
+                & h1 {
+                    font-size: 60px;
+                }
+                & .heart-empty {
+                    margin: -140px 0 0 79%;
+                }
+                & .heart-full {
+                    margin: -143px 0 0 78.9%;
+                    }
+                }
+            }
+        }
+
+        & .menu {
+            & .step {
+                font-size: 40px;
+            }
+            & article {
+                display: flex;
+                flex-direction: column;
+                & .dish-ingredient {
+                    font-size: 30px;
+                }
+                & .check{
+                    width: 20%;
+                    margin: -105px 0 0 100%;
+                }
+
+            }
+            
+            & .order-input {
+                margin : 0px 0% 45px 22%;
+                & p {
+                    text-align: center;
+                    font-weight: 900;
+                }
+            }
+        }
+}
+
+
+@media screen and (max-width : #{$tablette-small} ) {
+    
+}
+
+@media screen and (max-width : #{$mobil-high}) {
+    
+}
+
+@media screen and (max-width : #{$mobil-mid}) {
+    
+}
+
+@media screen and (max-width : #{$mobil-small}) {
+    
 }
