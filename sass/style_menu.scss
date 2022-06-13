@@ -3,13 +3,13 @@
 @keyframes slide-up-menu {
     from {
         opacity: 0;
-        // margin-top: -2500px;
+        margin-top: 15px;
     }
 
     to {
         opacity: 1;
         display: none;
-        // margin-top: 0px;
+        margin-top: 0px;
     }
 }
 
@@ -128,10 +128,27 @@ a {
                 & article {
                     display: flex;
                     flex-direction: column;
-                    & .dish-card {
-                        animation: slide-up-menu 1.5s 0.5s;
+                    & .card-1 {
+                        animation: slide-up-menu 0.8s 0.1s;
                         animation-fill-mode: both;
                         @include light-shadow;
+                    }
+                    & .card-2 {
+                        animation: slide-up-menu 0.8s 0.3s;
+                        animation-fill-mode: both;
+                        @include light-shadow;
+                    }
+                    & .card-3 {
+                        animation: slide-up-menu 0.8s 0.5s;
+                        animation-fill-mode: both;
+                        @include light-shadow;
+                    }
+                    & .card-4 {
+                        animation: slide-up-menu 0.8s 0.7s;
+                        animation-fill-mode: both;
+                        @include light-shadow;
+                    }
+                    & .dish-card {
                         background-color: white;
                         overflow: hidden;
                         // white-space: nowrap;
@@ -139,13 +156,17 @@ a {
                         height: 150px;
                         width: 95%;
                         border-radius: 40px;
-                        margin: 1% 0%;
+                        margin: 50px 0%;
                         &:hover {
                             @include shadow;
                         }
                         &:hover .check{
                             transform: translateX(-80%);
                             transition: transform 0.5s;
+                            & i { 
+                                    transform: rotate(360deg);
+                                    transition-duration: 0.5s;
+                                }
                             }
                         // &:active .check{
                         //     transform: translateX(-80%);
@@ -181,9 +202,17 @@ a {
                             margin: 80px 0 0 -100%;
                         }
                         & i {
-                            font-size: 50px;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            text-align: center;
+                            background-color: #fff;
+                            height: 50px;
+                            width: 50px;
+                            border-radius: 50px;
+                            font-size: 30px;
                             margin: 0px 0 0 35%;
-                            color : white;
+                            color : $third-color;
                         }
                         
                     }
@@ -205,6 +234,9 @@ a {
                     & p {
                         text-align: center;
                         font-weight: 900;
+                    }
+                    &:hover {
+                        @include shadow;
                     }
                 }
             }

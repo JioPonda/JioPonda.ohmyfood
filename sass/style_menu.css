@@ -1,20 +1,24 @@
 @-webkit-keyframes slide-up-menu {
   from {
     opacity: 0;
+    margin-top: 15px;
   }
   to {
     opacity: 1;
     display: none;
+    margin-top: 0px;
   }
 }
 
 @keyframes slide-up-menu {
   from {
     opacity: 0;
+    margin-top: 15px;
   }
   to {
     opacity: 1;
     display: none;
+    margin-top: 0px;
   }
 }
 
@@ -161,19 +165,45 @@ a {
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  main section .menu article .dish-card {
-    -webkit-animation: slide-up-menu 1.5s 0.5s;
-            animation: slide-up-menu 1.5s 0.5s;
+  main section .menu article .card-1 {
+    -webkit-animation: slide-up-menu 0.8s 0.1s;
+            animation: slide-up-menu 0.8s 0.1s;
     -webkit-animation-fill-mode: both;
             animation-fill-mode: both;
     -webkit-box-shadow: 7px 7px 7px lightgray;
             box-shadow: 7px 7px 7px lightgray;
+  }
+  main section .menu article .card-2 {
+    -webkit-animation: slide-up-menu 0.8s 0.3s;
+            animation: slide-up-menu 0.8s 0.3s;
+    -webkit-animation-fill-mode: both;
+            animation-fill-mode: both;
+    -webkit-box-shadow: 7px 7px 7px lightgray;
+            box-shadow: 7px 7px 7px lightgray;
+  }
+  main section .menu article .card-3 {
+    -webkit-animation: slide-up-menu 0.8s 0.5s;
+            animation: slide-up-menu 0.8s 0.5s;
+    -webkit-animation-fill-mode: both;
+            animation-fill-mode: both;
+    -webkit-box-shadow: 7px 7px 7px lightgray;
+            box-shadow: 7px 7px 7px lightgray;
+  }
+  main section .menu article .card-4 {
+    -webkit-animation: slide-up-menu 0.8s 0.7s;
+            animation: slide-up-menu 0.8s 0.7s;
+    -webkit-animation-fill-mode: both;
+            animation-fill-mode: both;
+    -webkit-box-shadow: 7px 7px 7px lightgray;
+            box-shadow: 7px 7px 7px lightgray;
+  }
+  main section .menu article .dish-card {
     background-color: white;
     overflow: hidden;
     height: 150px;
     width: 95%;
     border-radius: 40px;
-    margin: 1% 0%;
+    margin: 50px 0%;
   }
   main section .menu article .dish-card:hover {
     -webkit-box-shadow: 7px 7px 7px #a4a4a4;
@@ -186,6 +216,12 @@ a {
     transition: -webkit-transform 0.5s;
     transition: transform 0.5s;
     transition: transform 0.5s, -webkit-transform 0.5s;
+  }
+  main section .menu article .dish-card:hover .check i {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+    -webkit-transition-duration: 0.5s;
+            transition-duration: 0.5s;
   }
   main section .menu article .dish-infos {
     width: 100%;
@@ -220,9 +256,23 @@ a {
     margin: 80px 0 0 -100%;
   }
   main section .menu article .check i {
-    font-size: 50px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    text-align: center;
+    background-color: #fff;
+    height: 50px;
+    width: 50px;
+    border-radius: 50px;
+    font-size: 30px;
     margin: 0px 0 0 35%;
-    color: white;
+    color: #99E2D0;
   }
   main section .menu .order-input {
     display: -webkit-box;
@@ -248,6 +298,10 @@ a {
   main section .menu .order-input p {
     text-align: center;
     font-weight: 900;
+  }
+  main section .menu .order-input:hover {
+    -webkit-box-shadow: 7px 7px 7px #a4a4a4;
+            box-shadow: 7px 7px 7px #a4a4a4;
   }
   footer {
     display: -webkit-box;
