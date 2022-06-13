@@ -13,6 +13,14 @@
     }
 }
 
+@for $i from 1 through 4 {
+    .card-#{$i} {
+        animation: slide-up-menu 0.8s 0.2s*$i ease;
+        animation-fill-mode: both;
+        @include light-shadow;   
+    }
+}
+
 $primary-color : #9356DC;
 $secondary-color : #FF79DA;
 $third-color : #99E2D0;
@@ -128,27 +136,10 @@ a {
                 & article {
                     display: flex;
                     flex-direction: column;
-                    & .card-1 {
-                        animation: slide-up-menu 0.8s 0.1s;
-                        animation-fill-mode: both;
-                        @include light-shadow;
-                    }
-                    & .card-2 {
-                        animation: slide-up-menu 0.8s 0.3s;
-                        animation-fill-mode: both;
-                        @include light-shadow;
-                    }
-                    & .card-3 {
-                        animation: slide-up-menu 0.8s 0.5s;
-                        animation-fill-mode: both;
-                        @include light-shadow;
-                    }
-                    & .card-4 {
-                        animation: slide-up-menu 0.8s 0.7s;
-                        animation-fill-mode: both;
-                        @include light-shadow;
-                    }
                     & .dish-card {
+                        // display: flex;
+                        // flex-direction: row;
+                        // flex-wrap: nowrap;
                         background-color: white;
                         overflow: hidden;
                         // white-space: nowrap;
@@ -175,6 +166,7 @@ a {
                     }
                     
                     & .dish-infos {
+                        @include column;
                         width: 100%;
                     }
 
@@ -191,6 +183,7 @@ a {
 
                     & .check{
                         display: flex;
+                        flex-direction: row;
                         @include all-center;
                         background-color: $third-color;
                         width: 15%;
