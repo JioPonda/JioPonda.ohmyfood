@@ -1,1 +1,42 @@
-/* No CSS *//*# sourceMappingURL=function.css.map */
+@-webkit-keyframes moove {
+  from {
+    margin-right: -15%;
+  }
+  to {
+    margin-right: 0%;
+  }
+}
+
+@keyframes moove {
+  from {
+    margin-right: -15%;
+  }
+  to {
+    margin-right: 0%;
+  }
+}
+
+@-webkit-keyframes slide-up-menu {
+  from {
+    opacity: 0;
+    margin-top: 15px;
+  }
+  to {
+    opacity: 1;
+    display: none;
+    margin-top: 0px;
+  }
+}
+
+@keyframes slide-up-menu {
+  from {
+    opacity: 0;
+    margin-top: 15px;
+  }
+  to {
+    opacity: 1;
+    display: none;
+    margin-top: 0px;
+  }
+}
+/*# sourceMappingURL=function.css.map */

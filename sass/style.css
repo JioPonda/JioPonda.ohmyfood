@@ -444,6 +444,9 @@ a {
 
 /* 820px */
 @media screen and (max-width: 820px) {
+  .dot {
+    margin-top: -550px;
+  }
   nav img {
     height: 100px;
     width: 55%;
@@ -583,11 +586,11 @@ a {
     margin-top: -25px;
   }
   main article .card-infos .heart-empty {
-    font-size: 50px;
+    font-size: 44px;
     margin: -88px 0 0 70%;
   }
   main article .card-infos .heart-full {
-    font-size: 53px;
+    font-size: 47px;
     margin: -90px 0 0 69.5%;
   }
   footer {

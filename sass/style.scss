@@ -349,6 +349,10 @@ a {
 
 @media screen and (max-width: #{$tablette-mid}) {
     
+    .dot {
+        margin-top: -550px;
+    }
+
     nav {
         & img {
             height: 100px;
@@ -544,12 +548,12 @@ a {
                 }    
 
                 & .heart-empty {
-                    font-size: 50px;
+                    font-size: 44px;
                     margin: -88px 0 0 70%;
                 }
                 
                 & .heart-full {
-                    font-size: 53px;
+                    font-size: 47px;
                     margin: -90px 0 0 69.5%;
                 }
             
