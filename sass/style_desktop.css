@@ -1,0 +1,237 @@
+@-webkit-keyframes moove {
+  from {
+    margin-right: -15%;
+  }
+  to {
+    margin-right: 0%;
+  }
+}
+
+@keyframes moove {
+  from {
+    margin-right: -15%;
+  }
+  to {
+    margin-right: 0%;
+  }
+}
+
+@-webkit-keyframes slide-up-menu {
+  from {
+    opacity: 0;
+    margin-top: 15px;
+  }
+  to {
+    opacity: 1;
+    display: none;
+    margin-top: 0px;
+  }
+}
+
+@keyframes slide-up-menu {
+  from {
+    opacity: 0;
+    margin-top: 15px;
+  }
+  to {
+    opacity: 1;
+    display: none;
+    margin-top: 0px;
+  }
+}
+
+* {
+  font-family: "Roboto" , sans-serif;
+}
+
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0%;
+}
+
+header {
+  height: 100%;
+  width: 100%;
+}
+
+main {
+  height: 100%;
+  width: 100%;
+}
+
+i {
+  font-family: FontAwesome;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.loading {
+  position: fixed;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  width: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #f2f2f2;
+  z-index: 5;
+  -webkit-animation: cacher 4.5s ease forwards;
+          animation: cacher 4.5s ease forwards;
+  pointer-events: none;
+}
+
+.loading h1 {
+  position: absolute;
+  font-family: 'Shrikhand';
+  font-size: 150px;
+  margin-top: -150px;
+}
+
+.loading .dot {
+  position: relative;
+  width: 2em;
+  height: 2em;
+  margin: 0.8em;
+  border-radius: 50%;
+}
+
+.loading .dot::before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: inherit;
+  border-radius: inherit;
+  -webkit-animation: wave 1.5s ease 3;
+          animation: wave 1.5s ease 3;
+}
+
+.loading .dot:nth-child(1) {
+  background: #99E2D0;
+}
+
+.loading .dot:nth-child(1)::before {
+  -webkit-animation-delay: 0.2s;
+          animation-delay: 0.2s;
+}
+
+.loading .dot:nth-child(2) {
+  background: #99E2D0;
+}
+
+.loading .dot:nth-child(2)::before {
+  -webkit-animation-delay: 0.4s;
+          animation-delay: 0.4s;
+}
+
+.loading .dot:nth-child(3) {
+  background: #FF79DA;
+}
+
+.loading .dot:nth-child(3)::before {
+  -webkit-animation-delay: 0.6s;
+          animation-delay: 0.6s;
+}
+
+.loading .dot:nth-child(4) {
+  background: #9356DC;
+}
+
+.loading .dot:nth-child(4)::before {
+  -webkit-animation-delay: 0.8s;
+          animation-delay: 0.8s;
+}
+
+.loading .dot:nth-child(5) {
+  background: #9356DC;
+}
+
+.loading .dot:nth-child(5)::before {
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+}
+
+@-webkit-keyframes wave {
+  50%,
+  75% {
+    -webkit-transform: scale(2.5);
+            transform: scale(2.5);
+  }
+  80%,
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes wave {
+  50%,
+  75% {
+    -webkit-transform: scale(2.5);
+            transform: scale(2.5);
+  }
+  80%,
+  100% {
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes cacher {
+  0% {
+    opacity: 1;
+  }
+  99% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes cacher {
+  0% {
+    opacity: 1;
+  }
+  99% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+/* 1920px */
+@media screen and (max-width: 1920px) {
+  nav img {
+    height: 50px;
+    width: auto;
+    margin: 30px 0 0 5%;
+  }
+  nav form {
+    position: absolute;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    margin: 0px 0 0 0%;
+  }
+}
+
+/* 1440px */
+/* 1024px */
+/*# sourceMappingURL=style_desktop.css.map */
