@@ -54,10 +54,12 @@ a {
         & i {
             font-size: 65px;
             margin-left: -250%;
+            margin-top: 0;
         }
         & img {
             height: 100px;
             width: 50%;
+            margin: 0;
         }
     }
 
@@ -257,6 +259,14 @@ a {
 
 @media screen and (max-width : #{$tablette-mid}) {
     
+    nav {
+        & i {
+            font-size: 65px;
+            margin-left: -180%;
+            margin-top: 0;
+        }
+    }
+
     main {
         & section {
             & .restaurant-name{
@@ -299,7 +309,7 @@ a {
 
 
 @media screen and (max-width : #{$tablette-small} ) {
-    
+
     main {
         & section {
             & .restaurant-name{
