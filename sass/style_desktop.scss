@@ -43,7 +43,7 @@ a {
     animation: cacher 4.5s ease forwards ;
     pointer-events: none;
 
-        & h1 {
+        & p {
             position: absolute;
             font-family: 'Shrikhand';
             font-size: 150px;
@@ -150,7 +150,7 @@ nav {
             width: 200px;
             display: flex;
             @include all-center;
-            @include light-shadow
+            @include light-shadow;
             color: white;
             border-radius: 15px;
             font-size: 40px;
@@ -264,7 +264,7 @@ main {
 
     & article {
         display: flex;
-        @include all-center
+        @include all-center;
         height: 500px;
         width: 40%;
         overflow: hidden;
