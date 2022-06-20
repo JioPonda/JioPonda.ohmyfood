@@ -43,11 +43,13 @@ a {
     animation: cacher 4.5s ease forwards ;
     pointer-events: none;
 
-        & p {
+        & .loading-title {
             position: absolute;
+            margin-top: -250px;
+            & p {
             font-family: 'Shrikhand';
             font-size: 150px;
-            margin-top: -150px;
+            }
         }
     
         & .dot {

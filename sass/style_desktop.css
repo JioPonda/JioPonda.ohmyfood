@@ -93,11 +93,14 @@ a {
   pointer-events: none;
 }
 
-.loading p {
+.loading .loading-title {
   position: absolute;
+  margin-top: -250px;
+}
+
+.loading .loading-title p {
   font-family: 'Shrikhand';
   font-size: 150px;
-  margin-top: -150px;
 }
 
 .loading .dot {

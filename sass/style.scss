@@ -43,12 +43,14 @@ a {
     animation: cacher 4.5s ease forwards ;
     pointer-events: none;
 
+    & .loading-title {
+        position: absolute;
+        margin-top: -250px;
         & p {
-            position: absolute;
-            font-family: 'Shrikhand';
-            font-size: 150px;
-            margin-top: -150px;
+        font-family: 'Shrikhand';
+        font-size: 150px;
         }
+    }
     
         & .dot {
             position: relative;
@@ -487,7 +489,15 @@ a {
 /* 425px  */
 
 @media screen and (max-width : #{$mobil-high}) {
-    
+
+    .loading {    
+        & .loading-title {
+            & p {
+            font-size: 80px;
+            }
+        }
+    }
+
     nav {
 
         & img {
@@ -633,6 +643,14 @@ a {
 
 @media screen and (max-width : #{$mobil-mid}) {
 
+    .loading {    
+        & .loading-title {
+            & p {
+            font-size: 70px;
+            }
+        }
+    }
+
     nav {
         & img {
             height: 50px;
@@ -691,6 +709,14 @@ a {
 
 @media screen and (max-width : #{$mobil-small}) {
     
+    .loading {    
+        & .loading-title {
+            & p {
+            font-size: 60px;
+            }
+        }
+    }
+
     nav {
         & i {
             margin: 10px 0% 0% 14%;

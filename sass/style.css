@@ -93,11 +93,14 @@ a {
   pointer-events: none;
 }
 
-.loading p {
+.loading .loading-title {
   position: absolute;
+  margin-top: -250px;
+}
+
+.loading .loading-title p {
   font-family: 'Shrikhand';
   font-size: 150px;
-  margin-top: -150px;
 }
 
 .loading .dot {
@@ -599,6 +602,9 @@ a {
 
 /* 425px  */
 @media screen and (max-width: 425px) {
+  .loading .loading-title p {
+    font-size: 80px;
+  }
   nav img {
     height: 65px;
     width: 65%;
@@ -709,6 +715,9 @@ a {
 
 /* 375px */
 @media screen and (max-width: 375px) {
+  .loading .loading-title p {
+    font-size: 70px;
+  }
   nav img {
     height: 50px;
     width: 60%;
@@ -749,6 +758,9 @@ a {
 
 /* 320px*/
 @media screen and (max-width: 320px) {
+  .loading .loading-title p {
+    font-size: 60px;
+  }
   nav i {
     margin: 10px 0% 0% 14%;
   }
