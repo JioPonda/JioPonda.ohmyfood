@@ -118,6 +118,7 @@ a {
             height: 110px;
             width: 60%;
             margin-left: 15%;
+            margin-top: 0;
             padding: 5%;
         }
 
@@ -372,15 +373,17 @@ a {
 @media screen and (max-width: #{$tablette-mid}) {
 
     nav {
-        & img {
-            height: 100px;
-            width: 55%;
-            margin-left: 15%;
-            padding: 5%;
-        }
+        & .mobil-input {
+            & img {
+                height: 100px;
+                width: 55%;
+                margin-left: 15%;
+                padding: 5%;
+            }
 
-        & i {
-            margin: 22px 0% 0% 22%;
+            & i {
+                margin: 22px 0% 0% 22%;
+            }
         }
     }
     
@@ -401,14 +404,31 @@ a {
     }
 
     .etape {
+
+        &_number {
+            height: 65px;
+            width: 65px;
+            font-size: 50px;
+        }
+
+        & i {
+            margin-right: 55%;
+            font-size: 90px;
+        }
+        
         &_txt {
-            margin-left: 8%;
+            margin-left: -5%;
         }
     }
 
     main { 
         & article {
             height: 650px;
+
+            & .New {
+                margin-left: 65%;
+            }
+
             & .card-infos {
                 & .city {
                     margin-top: -37px;
@@ -420,19 +440,29 @@ a {
 
 /* 768px */
 
-@media screen and (max-width : #{$tablette-small}) {
-    .explore {
-        & h1 {
-            font-size: 55px;
+@media screen and (max-width: #{$tablette-small}) {
+
+    nav{
+
+        & .mobil-input {
+            & i {
+                margin: 22px 0% 0px 21%;
+            }
         }
 
-        & p {
-            font-size: 36px;
-        }
+        .explore {
+            & h1 {
+                font-size: 55px;
+            }
 
-        & a {
             & p {
-                font-size: 27px;
+                font-size: 36px;
+            }
+
+            & a {
+                & p {
+                    font-size: 27px;
+                }
             }
         }
     }
@@ -461,19 +491,23 @@ a {
     nav {
 
         & img {
-            height: 50px;
-            width: 50%;
-            margin-left: 20%;
+            height: 65px;
+            width: 65%;
+            margin-left: 15%;
+            margin-top: 0;
         }
 
-        & i {
-            font-size: 28px;
-            margin: 10px 0% 0% 20%;
-        }
+        & .mobil-input {
 
-        & input {
-            height: 50px;
-            font-size: 25px;
+            & i {
+                font-size: 28px;
+                margin: 10px 0% 0% 20%;
+            }
+
+            & input {
+                height: 50px;
+                font-size: 25px;
+            }
         }
     }    
 
@@ -524,8 +558,8 @@ a {
         }
 
         &_txt {
-            font-size: 20px;
-            margin-left: 22%;
+            font-size: 23px;
+            margin-left: 0;
         }
     }
 
@@ -600,15 +634,16 @@ a {
 @media screen and (max-width : #{$mobil-mid}) {
 
     nav {
-        
         & img {
             height: 50px;
             width: 60%;
             margin-left: 15%;
         }
 
-        & i {
-            margin: 10px 0% 0% 18%;
+        & .mobil-input{
+            & i {
+                margin: 10px 0% 0% 18%;
+            }
         }
     }
 
@@ -642,13 +677,12 @@ a {
         }
 
         & i {
-            margin-right: 55%;
-            font-size: 40px;
+            font-size: 50px;
+            margin-left: 2%;
         }
 
         &_txt {
-            font-size: 18px;
-            margin-left: 15%;
+            font-size: 19px;
         }
     }
 }
@@ -693,13 +727,12 @@ a {
         }
 
         & i {
-            margin-right: 55%;
-            font-size: 35px;
+            margin-right: 53%;
+            font-size: 45px;
         }
 
         &_txt {
             font-size: 16px;
-            margin-left: 19%;
         }
     }
 

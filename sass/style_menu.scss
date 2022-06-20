@@ -42,6 +42,8 @@ a {
     color: black;
 }
 
+/* 992px */ 
+
 @media screen and (max-width : #{$tablette-high}) {
         
     nav {
@@ -257,6 +259,8 @@ a {
     }
 }
 
+/* 820px */ 
+
 @media screen and (max-width : #{$tablette-mid}) {
     
     nav {
@@ -307,6 +311,7 @@ a {
     }
 }
 
+/* 768px */ 
 
 @media screen and (max-width : #{$tablette-small} ) {
 
@@ -352,6 +357,8 @@ a {
         }
     }
 }
+
+/* 425px */ 
 
 @media screen and (max-width : #{$mobil-high}) {
     
@@ -464,6 +471,8 @@ a {
     
 }
 
+/* 375px */
+
 @media screen and (max-width : #{$mobil-mid}) {
     
     nav {
@@ -570,117 +579,9 @@ a {
     }
 }
 
+/* 320px */
+
 @media screen and (max-width : #{$mobil-small}) {
-    nav {
-        & i {
-            font-size: 40px;
-            margin-left: -55%;
-        }
-        & img {
-            height: 65px;
-            width: 65%;
-        }
-    }
-
-    main {
-        & img {
-          height: 400px;  
-        }
-        & section {
-            border-top-left-radius: 60px;
-            border-top-right-radius: 60px;
-            & .restaurant-name{
-                margin-left: 5%;
-                width: 100%;
-                & h1 {
-                    font-size: 30px;
-                }
-                & .heart-empty {
-                    font-size: 30px;
-                    margin: -66px 0 0 78.4%;
-                }
-                & .heart-full {
-                    font-size: 33px;
-                    margin: -68px 0 0 77.9%;
-                }
-            }
-
-            & .menu {
-                & .step {
-                    font-size: 30px;
-                }
-
-                & .border{
-                    height: 5px;
-                    width: 18%;
-                    margin: -32px 0% 25px 0%;
-                }
-                
-                & article {
-                    & .dish-card {
-                        height: 100px;
-                        width: 95%;
-                        border-radius: 30px;
-                        margin: 30px 0%;
-                    }
-                    
-                    & .dish-infos {
-                        & .dish-name {
-                            font-size: 17px;
-                            margin: 20px 0 0 3%;
-                        }
-
-                        & .dish-ingredient {
-                            font-size: 15px;
-                            margin: 15px 0 0 3%;
-                        }
-                    }    
-
-                    & .moove {
-                        margin-right: -21%;
-                    & .dish-price {
-                        font-size: 20px;
-                        height: 105px;
-                        margin: 0 0 0 0%;
-                        & p {
-                            margin: 53px 0 0 -19%;
-                        }
-                    }
-                    
-                    & .check{
-                        height: 105px;
-                        width: 105px;
-                            & i {
-                                height: 40px;
-                                width: 40px;
-                                border-radius: 35px;
-                                font-size: 30px;
-                            }                        
-                        }
-
-                    }
-                }
-                
-                & .order-input {
-                    width: 60%;
-                    height: 70px;
-                    font-size: 30px;
-                    margin : 35px 0% 60px 20%;
-                }
-            }            
-        }
-    }
-
-    footer {
-        font-size: 25px;
-        & h2 {
-            font-size: 30px;
-        }
-    }
-    
-}
-
-@media screen and (max-width : #{$mobil-mid}) {
     
     nav {
         & i {
