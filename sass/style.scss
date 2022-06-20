@@ -231,23 +231,23 @@ a {
             position: absolute;
             margin-right: 80%;
             color: #fff;
-            height: 50px;
-            width: 50px;
-            font-size: 30px;
+            height: 65px;
+            width: 65px;
+            font-size: 45px;
             background-color: $primary-color;
             border-radius: 50px;
         }
 
         & i {
             position: absolute;
-            margin-right: 60%;
+            margin-right: 55%;
             color: grey;
-            font-size: 50px;
+            font-size: 80px;
         }
 
         &_txt {
             text-align: center;
-            font-size: 40px;
+            font-size: 50px;
             font-weight: bold;
         }
     }
