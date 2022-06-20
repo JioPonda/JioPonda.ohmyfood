@@ -241,11 +241,12 @@ a {
   }
   nav .mobil-input {
     display: block;
+    text-align: center;
   }
   nav .mobil-input i {
     position: absolute;
     font-size: 50px;
-    margin: 22px 0% 0% 26%;
+    margin: 22px 0% 0% -26%;
   }
   nav .mobil-input input {
     display: -webkit-box;
@@ -541,7 +542,7 @@ a {
     padding: 5%;
   }
   nav .mobil-input i {
-    margin: 22px 0% 0% 22%;
+    margin: 22px 0% 0% -29%;
   }
   .explore h1 {
     font-size: 55px;
@@ -578,7 +579,7 @@ a {
 /* 768px */
 @media screen and (max-width: 768px) {
   nav .mobil-input i {
-    margin: 22px 0% 0px 21%;
+    margin: 22px 0% 0px -31%;
   }
   nav .explore h1 {
     font-size: 55px;
@@ -613,7 +614,7 @@ a {
   }
   nav .mobil-input i {
     font-size: 28px;
-    margin: 10px 0% 0% 20%;
+    margin: 10px 0% 0% -30%;
   }
   nav .mobil-input input {
     height: 50px;
@@ -724,7 +725,7 @@ a {
     margin-left: 15%;
   }
   nav .mobil-input i {
-    margin: 10px 0% 0% 18%;
+    margin: 10px 0% 0% -32%;
   }
   .explore h1 {
     font-size: 30px;
@@ -761,8 +762,8 @@ a {
   .loading .loading-title p {
     font-size: 60px;
   }
-  nav i {
-    margin: 10px 0% 0% 14%;
+  nav .mobil-input i {
+    margin: 10px 0% 0% -38%;
   }
   .explore h1 {
     font-size: 26px;

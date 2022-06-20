@@ -130,10 +130,11 @@ a {
 
         & .mobil-input {
             display: block;
+            text-align: center;
             & i {
                 position: absolute;
                 font-size: 50px;
-                margin: 22px 0% 0% 26%;
+                margin: 22px 0% 0% -26%;
             }
 
             & input { 
@@ -384,7 +385,7 @@ a {
             }
 
             & i {
-                margin: 22px 0% 0% 22%;
+                margin: 22px 0% 0% -29%;
             }
         }
     }
@@ -448,7 +449,7 @@ a {
 
         & .mobil-input {
             & i {
-                margin: 22px 0% 0px 21%;
+                margin: 22px 0% 0px -31%;
             }
         }
 
@@ -511,7 +512,7 @@ a {
 
             & i {
                 font-size: 28px;
-                margin: 10px 0% 0% 20%;
+                margin: 10px 0% 0% -30%;
             }
 
             & input {
@@ -660,7 +661,7 @@ a {
 
         & .mobil-input{
             & i {
-                margin: 10px 0% 0% 18%;
+                margin: 10px 0% 0% -32%;
             }
         }
     }
@@ -718,8 +719,10 @@ a {
     }
 
     nav {
-        & i {
-            margin: 10px 0% 0% 14%;
+        & .mobil-input {
+            & i {
+                margin: 10px 0% 0% -38%;
+            }
         }
     }
     
