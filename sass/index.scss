@@ -192,6 +192,7 @@ nav {
 
         &:hover {
             @include shadow;
+            background: linear-gradient(hsl(309, 76%, 72%),hsl(295, 61%, 67%), hsl(267, 66%, 68%))
         }
     }
 }
@@ -237,7 +238,7 @@ nav {
 
     & i {
         position: absolute;
-        margin-right: 55%;
+        margin-right: 57%;
         color: grey;
         font-size: 80px;
     }
@@ -246,6 +247,7 @@ nav {
         text-align: center;
         font-size: 50px;
         font-weight: bold;
+        margin-left: 15%
     }
 }
 
@@ -411,13 +413,13 @@ main {
         }
 
         & i {
-            margin-right: 55%;
-            font-size: 85px;
+            margin-right: 57%;
+            font-size: 80px;
         }
         
         &_txt {
-            margin-left: -2%;
-            font-size: 45px;
+            margin-left: 15%;
+            font-size: 40px;
         }
     }
 
@@ -474,8 +476,8 @@ main {
         }
         
         &_txt {
-            margin-left: -1%;
-            font-size: 45px;
+            margin-left: 15%;
+            font-size: 35px;
         }
     }
     
@@ -561,7 +563,7 @@ main {
     }
 
     .etape {
-        height: 100px;
+        height: 90px;
         width: 80%;
         border-radius: 40px;
 
@@ -578,8 +580,8 @@ main {
         }
 
         &_txt {
-            font-size: 23px;
-            margin-left: 0;
+            font-size: 20px;
+            margin-left: 15%;
         }
     }
 
@@ -765,8 +767,8 @@ main {
         }
 
         & i {
-            margin-right: 53%;
-            font-size: 45px;
+            margin-right: 56%;
+            font-size: 30px;
         }
 
         &_txt {

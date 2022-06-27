@@ -363,6 +363,8 @@ a {
   main section .menu .order-input:hover {
     -webkit-box-shadow: 7px 7px 7px #a4a4a4;
             box-shadow: 7px 7px 7px #a4a4a4;
+    background: -webkit-gradient(linear, left top, left bottom, from(#ee81de), color-stop(#d678de), to(#a878e3));
+    background: linear-gradient(#ee81de, #d678de, #a878e3);
   }
   footer {
     display: -webkit-box;

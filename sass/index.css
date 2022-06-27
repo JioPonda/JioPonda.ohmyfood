@@ -337,6 +337,8 @@ nav .mobil-input input {
 .explore a:hover {
   -webkit-box-shadow: 7px 7px 7px #a4a4a4;
           box-shadow: 7px 7px 7px #a4a4a4;
+  background: -webkit-gradient(linear, left top, left bottom, from(#ee81de), color-stop(#d678de), to(#a878e3));
+  background: linear-gradient(#ee81de, #d678de, #a878e3);
 }
 
 .fonctionnement {
@@ -410,7 +412,7 @@ nav .mobil-input input {
 
 .etape i {
   position: absolute;
-  margin-right: 55%;
+  margin-right: 57%;
   color: grey;
   font-size: 80px;
 }
@@ -419,6 +421,7 @@ nav .mobil-input input {
   text-align: center;
   font-size: 50px;
   font-weight: bold;
+  margin-left: 15%;
 }
 
 main {
@@ -594,12 +597,12 @@ footer a {
     font-size: 50px;
   }
   .etape i {
-    margin-right: 55%;
-    font-size: 85px;
+    margin-right: 57%;
+    font-size: 80px;
   }
   .etape_txt {
-    margin-left: -2%;
-    font-size: 45px;
+    margin-left: 15%;
+    font-size: 40px;
   }
   main article {
     height: 650px;
@@ -631,8 +634,8 @@ footer a {
     font-size: 80px;
   }
   .etape_txt {
-    margin-left: -1%;
-    font-size: 45px;
+    margin-left: 15%;
+    font-size: 35px;
   }
   main article {
     height: 600px;
@@ -686,7 +689,7 @@ footer a {
     font-size: 25px;
   }
   .etape {
-    height: 100px;
+    height: 90px;
     width: 80%;
     border-radius: 40px;
   }
@@ -701,8 +704,8 @@ footer a {
     font-size: 47px;
   }
   .etape_txt {
-    font-size: 23px;
-    margin-left: 0;
+    font-size: 20px;
+    margin-left: 15%;
   }
   main {
     padding: 5% 0 5% 0;
@@ -831,8 +834,8 @@ footer a {
     font-size: 20px;
   }
   .etape i {
-    margin-right: 53%;
-    font-size: 45px;
+    margin-right: 56%;
+    font-size: 30px;
   }
   .etape_txt {
     font-size: 16px;
