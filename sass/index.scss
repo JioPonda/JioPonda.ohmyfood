@@ -106,270 +106,266 @@ a {
     }
 }
 
-/* 992px */
 
-@media screen and (max-width : #{$tablette-high}) {
+nav {
+    @include full-size;
+    display: flex;
+    flex-direction: column;
+    background-color: $light-grey;
 
-    nav {
-        @include full-size;
-        display: flex;
-        flex-direction: column;
-        background-color: $light-grey;
-
-        & img {
-            height: 110px;
-            width: 60%;
-            margin-left: 15%;
-            margin-top: 0;
-            padding: 5%;
-        }
-
-        & .desktop-input {
-            display: none;
-        }
-
-        & .mobil-input {
-            display: block;
-            text-align: center;
-            & i {
-                position: absolute;
-                font-size: 50px;
-                margin: 22px 0% 0% -26%;
-            }
-
-            & input { 
-                display: flex;
-                @include all-center;
-                width: 100%;
-                height: 100px;
-                text-align: center;
-                font-weight: bold;
-                font-size: 50px;
-                color: black;
-                background-color: lightgrey;
-                border-color: lightgrey;
-            }
-        }
-    }    
-
-    .explore {
-        position: relative;
-        @include column;
-        @include all-center;
-        @include full-size;
-        padding: 50px 0 50px 0;
-        margin : 0px 0 0 0%;
-        background-color: $light-grey;
-
-        & h1 {
-            width: 100%;
-            text-align: center;
-            font-weight: bolder;
-            font-size: 82px;
-        }
-
-        & p {
-            width: 80%;
-            margin-top: -20px;
-            text-align: center;
-            font-weight: 200;
-            font-size: 46px;
-        }
-
-        & a {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            width: 50%;
-            height: 120px;
-            color: #fff;
-            background: linear-gradient(#ec73da,#d26adb, #{$primary-color});
-            border-radius: 60px;
-            @include light-shadow;
-            
-            & p {
-                margin-top: 30px;
-                font-size: 35px;
-                font-weight: bold;
-            }
-
-            &:hover {
-                @include shadow;
-            }
-        }
+    & img {
+        height: 110px;
+        width: 60%;
+        margin-left: 15%;
+        margin-top: 0;
+        padding: 5%;
     }
 
-    .fonctionnement {
-        @include column;
-
-        & h2 {
-            @include principal-title;
-        }
+    & .desktop-input {
+        display: none;
     }
 
-    .etape {
-        height: 150px;
-        width: 80%;
-        display: flex;
-        flex-direction: row;
-        @include all-center;
-        background-color: #f6f6f6;
-        border-radius: 50px;
-        @include light-shadow;
-        margin: 15px 0% 15px 10%;
-        &:hover {
-            background-color: lighten($color: $primary-color, $amount: 35);
-            @include shadow;
-            & i {
-                color: $primary-color;
-            }
-        }
-
-        &_number {
-            display: flex;
-            @include all-center;
-            position: absolute;
-            margin-right: 80%;
-            color: #fff;
-            height: 65px;
-            width: 65px;
-            font-size: 45px;
-            background-color: $primary-color;
-            border-radius: 50px;
-        }
-
+    & .mobil-input {
+        display: block;
+        text-align: center;
         & i {
             position: absolute;
-            margin-right: 55%;
-            color: grey;
-            font-size: 80px;
+            font-size: 50px;
+            margin: 22px 0% 0% -26%;
         }
 
-        &_txt {
+        & input { 
+            display: flex;
+            @include all-center;
+            width: 100%;
+            height: 100px;
             text-align: center;
+            font-weight: bold;
             font-size: 50px;
+            color: black;
+            background-color: lightgrey;
+            border-color: lightgrey;
+        }
+    }
+}    
+
+.explore {
+    position: relative;
+    @include column;
+    @include all-center;
+    @include full-size;
+    padding: 50px 0 50px 0;
+    margin : 0px 0 0 0%;
+    background-color: $light-grey;
+
+    & h1 {
+        width: 100%;
+        text-align: center;
+        font-weight: bolder;
+        font-size: 82px;
+    }
+
+    & p {
+        width: 80%;
+        margin-top: -20px;
+        text-align: center;
+        font-weight: 200;
+        font-size: 46px;
+    }
+
+    & a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 50%;
+        height: 120px;
+        color: #fff;
+        background: linear-gradient(#ec73da,#d26adb, #{$primary-color});
+        border-radius: 60px;
+        @include light-shadow;
+                
+        & p {
+            margin-top: 30px;
+            font-size: 35px;
             font-weight: bold;
         }
-    }
 
-    main {
-        @include column;
-        background-color: $light-grey;
-        padding: 5% 0 5% 0;
-        margin-top: 50px;
-
-        & h2 {
-            position: relative;
-            @include principal-title;
-            margin-top: 50px;
-        }
-
-        & article {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 700px;
-            width: 90%;
-            overflow: hidden;
-            background-color: white;
-            margin: 5% 0 5% 5%;
-            border-radius: 50px;
-            @include light-shadow;
-            &:hover{
-                @include shadow;
-            }
-
-            & a {
-                @include full-size
-            }
-
-            & .New {
-                position: absolute;
-                font-weight: bolder;
-                color: darken($color: $third-color, $amount: 40);
-                background-color: $third-color;
-                padding: 1%;
-                font-size: 35px;
-                margin-top: 30px;
-                margin-left: 70%;
-            }
-
-            & .New-hide {
-                display: none;
-            }
-
-            & .img-container {
-                height: 75%;
-                width: 100%;
-                & img {
-                    @include full-size
-                }
-            }
-
-            & .card-infos {
-                font-size: 40px;
-                margin: -25px 0 0 3%;
-                
-                & .city {
-                    margin-top: -28px;
-                }
-                
-
-                & .heart-empty {
-                    position: absolute;
-                    display: block;
-                    font-size: 70px;
-                    margin: -150px 0 0 73%;
-                    padding: 1%;
-                    opacity: 1;
-
-                }
-                & .heart-full {
-                    position: absolute;
-                    color: $primary-color;
-                    display: block;
-                    font-size: 73px;
-                    margin: -152px 0 0 72.9%;
-                    padding: 1%;
-                    @include gradient-heart;
-                    z-index: 1;
-                    opacity: 0;
-                    &:hover {
-                        transition-duration: 0.2s;
-                        opacity: 1
-                    }
-                }
-            }
-        }
-
-    }
-
-    footer {
-        @include column;
-        width: 100%;
-        background-color: #353535;
-        font-size: 40px;
-        & h2 {
-            font-family: 'Shrikhand';
-            color: white;
-            font-size: 60px;
-            margin : 25px 0 0 4%;
-        }
-
-        & ul {
-            margin-top: 15px;
-        }
-
-        & li {
-            padding: 0% 0 0% 0;
-        }
-
-        & a {
-            color: white;
-            padding: 2% 0 2% 0;
+        &:hover {
+            @include shadow;
         }
     }
 }
+
+.fonctionnement {
+    @include column;
+
+    & h2 {
+        @include principal-title;
+    }
+}
+
+.etape {
+    height: 150px;
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    @include all-center;
+    background-color: #f6f6f6;
+    border-radius: 50px;
+    @include light-shadow;
+    margin: 15px 0% 15px 10%;
+    &:hover {
+    background-color: lighten($color: $primary-color, $amount: 35);
+    @include shadow;
+        & i {
+            color: $primary-color;
+        }
+    }
+
+    &_number {
+        display: flex;
+        @include all-center;
+        position: absolute;
+        margin-right: 80%;
+        color: #fff;
+        height: 65px;
+        width: 65px;
+        font-size: 45px;
+        background-color: $primary-color;
+        border-radius: 50px;
+    }
+
+    & i {
+        position: absolute;
+        margin-right: 55%;
+        color: grey;
+        font-size: 80px;
+    }
+
+    &_txt {
+        text-align: center;
+        font-size: 50px;
+        font-weight: bold;
+    }
+}
+
+main {
+    @include column;
+    background-color: $light-grey;
+    padding: 5% 0 5% 0;
+    margin-top: 50px;
+
+    & h2 {
+        position: relative;
+        @include principal-title;
+        margin-top: 50px;
+    }
+
+    & article {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 700px;
+        width: 90%;
+        overflow: hidden;
+        background-color: white;
+        margin: 5% 0 5% 5%;
+        border-radius: 50px;
+        @include light-shadow;
+        &:hover{
+            @include shadow;
+        }
+
+        & a {
+            @include full-size
+           }
+
+        & .New {
+            position: absolute;
+            font-weight: bolder;
+            color: darken($color: $third-color, $amount: 40);
+            background-color: $third-color;
+            padding: 1%;
+            font-size: 35px;
+            margin-top: 30px;
+            margin-left: 70%;
+        }
+
+        & .New-hide {
+            display: none;
+        }
+
+        & .img-container {
+            height: 75%;
+            width: 100%;
+            & img {
+                @include full-size
+            }
+        }
+
+                & .card-infos {
+                    font-size: 40px;
+                    margin: -25px 0 0 3%;
+                    
+                    & .city {
+                        margin-top: -28px;
+                    }
+                    
+
+                    & .heart-empty {
+                        position: absolute;
+                        display: block;
+                        font-size: 70px;
+                        margin: -150px 0 0 73%;
+                        padding: 1%;
+                        opacity: 1;
+
+                    }
+                    & .heart-full {
+                        position: absolute;
+                        color: $primary-color;
+                        display: block;
+                        font-size: 73px;
+                        margin: -152px 0 0 72.9%;
+                        padding: 1%;
+                        @include gradient-heart;
+                        z-index: 1;
+                        opacity: 0;
+                        &:hover {
+                            transition-duration: 0.2s;
+                            opacity: 1
+                        }
+                    }
+                }
+            }
+
+        }
+
+        footer {
+            @include column;
+            width: 100%;
+            background-color: #353535;
+            font-size: 40px;
+            & h2 {
+                font-family: 'Shrikhand';
+                color: white;
+                font-size: 60px;
+                margin : 25px 0 0 4%;
+            }
+
+            & ul {
+                margin-top: 15px;
+            }
+
+            & li {
+                padding: 0% 0 0% 0;
+            }
+
+            & a {
+                color: white;
+                padding: 2% 0 2% 0;
+            }
+        }
 
 /* 820px */
 
