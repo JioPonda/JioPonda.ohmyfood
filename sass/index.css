@@ -560,10 +560,11 @@ a {
   }
   .etape i {
     margin-right: 55%;
-    font-size: 90px;
+    font-size: 85px;
   }
   .etape_txt {
-    margin-left: -5%;
+    margin-left: -2%;
+    font-size: 45px;
   }
   main article {
     height: 650px;
@@ -581,14 +582,22 @@ a {
   nav .mobil-input i {
     margin: 22px 0% 0px -31%;
   }
-  nav .explore h1 {
+  .explore h1 {
     font-size: 55px;
   }
-  nav .explore p {
+  .explore p {
     font-size: 36px;
   }
-  nav .explore a p {
+  .explore a p {
     font-size: 27px;
+  }
+  .etape i {
+    margin-right: 57%;
+    font-size: 80px;
+  }
+  .etape_txt {
+    margin-left: -1%;
+    font-size: 45px;
   }
   main article {
     height: 600px;
@@ -830,6 +839,10 @@ a {
   main article .card-infos .heart-full {
     font-size: 43px;
     margin: -71px 0 0 68%;
+  }
+  footer {
+    width: 100%;
+    font-size: 25px;
   }
 }
 /*# sourceMappingURL=index.css.map */

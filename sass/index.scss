@@ -416,11 +416,12 @@ a {
 
         & i {
             margin-right: 55%;
-            font-size: 90px;
+            font-size: 85px;
         }
         
         &_txt {
-            margin-left: -5%;
+            margin-left: -2%;
+            font-size: 45px;
         }
     }
 
@@ -445,28 +446,40 @@ a {
 
 @media screen and (max-width: #{$tablette-small}) {
 
-    nav{
-
+    nav {
         & .mobil-input {
             & i {
                 margin: 22px 0% 0px -31%;
             }
         }
 
-        .explore {
-            & h1 {
-                font-size: 55px;
-            }
+    }
+    
+    .explore {
+        & h1 {
+            font-size: 55px;
+        }
 
+        & p {
+            font-size: 36px;
+        }
+
+        & a {
             & p {
-                font-size: 36px;
+                font-size: 27px;
             }
+        }
+    }
 
-            & a {
-                & p {
-                    font-size: 27px;
-                }
-            }
+    .etape {
+        & i {
+            margin-right: 57%;
+            font-size: 80px;
+        }
+        
+        &_txt {
+            margin-left: -1%;
+            font-size: 45px;
         }
     }
     
@@ -811,5 +824,10 @@ a {
             
             }        
         }
+    }
+
+    footer {
+         width: 100%;
+        font-size: 25px;
     }
 }
