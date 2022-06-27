@@ -225,9 +225,11 @@ header {
     width: 100%;
   }
   nav img {
+    position: absolute;
+    z-index: 2;
     height: 50px;
-    width: auto;
-    margin: 50px 0 0 4%;
+    width: 15%;
+    margin: -10px 0 0 0%;
   }
   nav .desktop-input {
     display: -webkit-box;
@@ -238,7 +240,8 @@ header {
         -ms-flex-direction: row;
             flex-direction: row;
     position: absolute;
-    margin: 320px 0 0 5%;
+    z-index: 2;
+    margin: 485px 0 0 5%;
   }
   nav .desktop-input i {
     display: -webkit-box;
@@ -298,9 +301,11 @@ header {
     display: none;
   }
   .explore {
+    height: 100px;
     position: absolute;
     background-color: #f2f2f2;
-    margin: -380px 0 0 5%;
+    margin: -270px 0 0 -10%;
+    padding: 0;
   }
   .explore h1 {
     font-size: 80px;
@@ -527,10 +532,10 @@ header {
 /* 1440px */
 @media screen and (max-width: 1440px) {
   nav .desktop-input {
-    margin: 250px 0 0 5%;
+    margin: 350px 0 0 5%;
   }
   .explore {
-    margin: -380px 0 0 5%;
+    margin: -340px 0 0 -10%;
   }
   .explore h1 {
     font-size: 60px;
@@ -600,10 +605,10 @@ header {
 /* 1280px */
 @media screen and (max-width: 1280px) {
   nav .desktop-input {
-    margin: 250px 0 0 5%;
+    margin: 350px 0 0 5%;
   }
   .explore {
-    margin: -380px 0 0 5%;
+    margin: -340px 0 0 -5%;
   }
   .explore h1 {
     font-size: 60px;
@@ -673,10 +678,10 @@ header {
 /* 1024px */
 @media screen and (max-width: 1024px) {
   nav img {
-    height: 40px;
+    width: 20%;
   }
   nav .desktop-input {
-    margin: 210px 0 0 5%;
+    margin: 320px 0 0 5%;
   }
   nav .desktop-input i {
     height: 90px;
@@ -694,7 +699,7 @@ header {
   .explore {
     position: absolute;
     background-color: #f2f2f2;
-    margin: -390px 0 0 5%;
+    margin: -350px 0 0 -5%;
   }
   .explore h1 {
     font-size: 50px;

@@ -16,6 +16,24 @@
   }
 }
 
+@-webkit-keyframes moove-out {
+  from {
+    margin-right: 0%;
+  }
+  to {
+    margin-right: -15%;
+  }
+}
+
+@keyframes moove-out {
+  from {
+    margin-right: 0%;
+  }
+  to {
+    margin-right: -15%;
+  }
+}
+
 @-webkit-keyframes slide-up-menu {
   from {
     opacity: 0;
@@ -796,11 +814,12 @@ footer a {
     font-size: 25px;
   }
   .etape i {
-    font-size: 50px;
-    margin-left: 2%;
+    font-size: 45px;
+    margin-left: -1%;
   }
   .etape_txt {
     font-size: 19px;
+    margin-left: 20%;
   }
 }
 

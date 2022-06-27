@@ -40,197 +40,201 @@ a {
     color: black;
 }
 
-nav {
-    padding: 30px 0px;
-    display: flex;
-    flex-direction: row;
-    @include full-size;
-    background-color: $light-grey;
-    & i {
-        font-size: 80px;
-        margin-left: 250%;
-        margin-top: 15px;
-    }
-    & img {
-        margin-top: 5px;
-        margin-left: 30%;
-        height: 100px;
-        width: auto;
-    }
-}
+@media screen and (max-width: 1920px) {
 
-main {
-    display: flex;
-    flex-direction: column;
-    overflow: hidden;
-    & img {
-      height: 850px;
-      width: 100%;
-      margin-top: -15px;  
-    }
-    & section {
-        @include column;
-        width: 100%;
+    nav {
+        padding: 30px 0px;
+        display: flex;
+        flex-direction: row;
+        @include full-size;
         background-color: $light-grey;
-        margin-top: -105px;
-        border-top-left-radius: 120px;
-        border-top-right-radius: 120px;
-        & .restaurant-name{
-            margin-left: 5%;
+        & i {
+            font-size: 80px;
+            margin-left: 250%;
+            margin-top: 15px;
+        }
+        & img {
+            margin-top: 5px;
+            margin-left: 30%;
+            height: 100px;
+            width: auto;
+        }
+    }
+
+    main {
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+        & img {
+        height: 850px;
+        width: 100%;
+        margin-top: -15px;  
+        }
+        & section {
+            @include column;
             width: 100%;
-            & h1 {
-                font-family: 'Shrikhand';
-                font-size: 70px;
-                margin-top: 40px;
-            }
-            & .heart-empty {
-                position: absolute;
-                font-size: 70px;
-                margin: -150px 0 0 80%;
-                padding: 1%;
-            }
-            & .heart-full {
-                position: absolute;
-                font-size: 75px;
-                margin: -152px 0 0 79.9%;
-                padding: 1%;
-                @include gradient-heart;
-                opacity : 0;
-                &:hover{
-                    opacity: 1;
-                    transition-duration: 0.3s;
+            background-color: $light-grey;
+            margin-top: -105px;
+            border-top-left-radius: 120px;
+            border-top-right-radius: 120px;
+            & .restaurant-name{
+                margin-left: 5%;
+                width: 100%;
+                & h1 {
+                    font-family: 'Shrikhand';
+                    font-size: 70px;
+                    margin-top: 40px;
+                }
+                & .heart-empty {
+                    position: absolute;
+                    font-size: 70px;
+                    margin: -150px 0 0 80%;
+                    padding: 1%;
+                }
+                & .heart-full {
+                    position: absolute;
+                    font-size: 75px;
+                    margin: -152px 0 0 79.9%;
+                    padding: 1%;
+                    @include gradient-heart;
+                    opacity : 0;
+                    &:hover{
+                        opacity: 1;
+                        transition-duration: 0.3s;
+                    }
                 }
             }
-        }
 
-        & .menu {
-            @include column;
-            flex-wrap: wrap;
-            margin-left: 5%;
-            & .step {
-                font-size: 50px;
-                font-weight: 100;
-                text-transform: uppercase;
-            }
-
-            & .border{
-                height: 10px;
-                width: 8%;
-                background-color: $third-color;
-                margin: -50px 0% 25px 0%;
-            }
-            
-            & article {
-                display: flex;
-                flex-direction: row;
+            & .menu {
+                @include column;
                 flex-wrap: wrap;
-                & .dish-card {
+                margin-left: 5%;
+                & .step {
+                    font-size: 50px;
+                    font-weight: 100;
+                    text-transform: uppercase;
+                }
+
+                & .border{
+                    height: 10px;
+                    width: 8%;
+                    background-color: $third-color;
+                    margin: -50px 0% 25px 0%;
+                }
+                
+                & article {
                     display: flex;
                     flex-direction: row;
-                    background-color: white;
-                    overflow: hidden;
-                    height: 150px;
-                    width: 45%;
-                    border-radius: 40px;
-                    margin: 50px 2%;
+                    flex-wrap: wrap;
+                    & .dish-card {
+                        display: flex;
+                        flex-direction: row;
+                        background-color: white;
+                        overflow: hidden;
+                        height: 150px;
+                        width: 45%;
+                        border-radius: 40px;
+                        margin: 50px 2%;
+                        &:hover {
+                            @include shadow;
+                        }
+                        &:hover .moove{
+                            animation: moove 0.5s ease forwards;
+                            & i { 
+                                    transform: rotate(360deg);
+                                    transition-duration: 0.5s;
+                                }
+                            }
+                    }
+                    
+                    & .dish-infos {
+                        @include column;
+                        @include full-size;
+                        position: relative;
+                        & .dish-name {
+                            font-size: 39px;
+                            margin: 15px 0 0 3%;
+                            overflow: hidden;
+                            white-space: nowrap;
+                            text-overflow: ellipsis;
+                        }
+
+                        & .dish-ingredient {
+                            font-size: 32px;
+                            overflow: hidden;
+                            white-space: nowrap;
+                            text-overflow: ellipsis;
+                            margin: 7px 0 0 3%;
+                        }
+                    }    
+
+                    & .moove {
+                        width: 30%;
+                        display: flex;
+                        flex-direction: row;
+                        margin-right: -16%;
+                    & .dish-price {
+                        position: relative;
+                        font-size: 35px;
+                        width: 50%;
+                        height: 155px;
+                        font-weight: bold;
+                        margin: 0 0 0 0%;
+                        & p {
+                            margin: 75px 0 0 0%;
+                        }
+                    }
+                    
+                    & .check{
+                        overflow: hidden;
+                        display: flex;
+                        flex-direction: row;
+                        @include all-center;
+                        height: 155px;
+                        width: 155px;
+                        background-color: $third-color;
+                            & i {
+                                display: flex;
+                                @include all-center;
+                                height: 60px;
+                                width: 60px;
+                                border-radius: 35px;
+                                font-size: 40px;
+                                background-color: white;
+                                color: $third-color;
+                            }                        
+                        }
+
+                    }
+                }
+                
+                & .order-input {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    width: 40%;
+                    height: 120px;
+                    color: #fff;
+                    background: linear-gradient(#{$secondary-color},#d26adb, #{$primary-color});
+                    font-size: 40px;
+                    border-radius: 60px;
+                    @include light-shadow;
+                    margin : 35px 0% 75px 25%;
+                    & p {
+                        text-align: center;
+                        font-weight: 900;
+                    }
                     &:hover {
                         @include shadow;
+                        background: linear-gradient(hsl(309, 76%, 72%),hsl(295, 61%, 67%), hsl(267, 66%, 68%))
                     }
-                    &:hover .moove{
-                        animation: moove 0.5s ease forwards;
-                        & i { 
-                                transform: rotate(360deg);
-                                transition-duration: 0.5s;
-                            }
-                        }
-                }
-                
-                & .dish-infos {
-                    @include column;
-                    @include full-size;
-                    position: relative;
-                    & .dish-name {
-                        font-size: 41px;
-                        margin: 15px 0 0 3%;
-                        overflow: hidden;
-                        white-space: nowrap;
-                        text-overflow: ellipsis;
-                    }
-
-                    & .dish-ingredient {
-                        font-size: 32px;
-                        overflow: hidden;
-                        white-space: nowrap;
-                        text-overflow: ellipsis;
-                        margin: 7px 0 0 3%;
-                    }
-                }    
-
-                & .moove {
-                    width: 30%;
-                    display: flex;
-                    flex-direction: row;
-                    margin-right: -16%;
-                & .dish-price {
-                    position: relative;
-                    font-size: 35px;
-                    width: 50%;
-                    height: 155px;
-                    font-weight: bold;
-                    margin: 0 0 0 0%;
-                    & p {
-                        margin: 75px 0 0 0%;
-                    }
-                }
-                
-                & .check{
-                    overflow: hidden;
-                    display: flex;
-                    flex-direction: row;
-                    @include all-center;
-                    height: 155px;
-                    width: 155px;
-                    background-color: $third-color;
-                        & i {
-                            display: flex;
-                            @include all-center;
-                            height: 60px;
-                            width: 60px;
-                            border-radius: 35px;
-                            font-size: 40px;
-                            background-color: white;
-                            color: $third-color;
-                        }                        
-                    }
-
                 }
             }
             
-            & .order-input {
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                width: 40%;
-                height: 120px;
-                color: #fff;
-                background: linear-gradient(#{$secondary-color},#d26adb, #{$primary-color});
-                font-size: 40px;
-                border-radius: 60px;
-                @include light-shadow;
-                margin : 35px 0% 75px 25%;
-                & p {
-                    text-align: center;
-                    font-weight: 900;
-                }
-                &:hover {
-                    @include shadow;
-                    background: linear-gradient(hsl(309, 76%, 72%),hsl(295, 61%, 67%), hsl(267, 66%, 68%))
-                }
-            }
         }
-        
-    }
 
+
+    }
 
 }
 
@@ -427,7 +431,7 @@ footer {
                     
                     & .dish-infos {
                         & .dish-name {
-                            font-size: 28px;
+                            font-size: 26px;
                             margin: 26px 0 0 3%;
                         }
     
@@ -549,7 +553,7 @@ footer {
                     
                     & .dish-infos {
                         & .dish-name {
-                            font-size: 21px;
+                            font-size: 20px;
                             margin: 33px 0 0 3%;
                         }
     

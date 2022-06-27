@@ -116,16 +116,19 @@ header {
         height: 500px;
         width: 100%;
         & img {
+            position: absolute;
+            z-index: 2;
             height: 50px;
-            width: auto;
-            margin: 50px 0 0 4%;
+            width: 15%;
+            margin: -10px 0 0 0%;
         }
 
         & .desktop-input {
             display: flex;
             flex-direction: row;
             position: absolute;
-            margin: 320px 0 0 5%;
+            z-index: 2;
+            margin: 485px 0 0 5%;
 
             & i {
                 display: flex;
@@ -175,9 +178,11 @@ header {
     }
 
     .explore {
+        height: 100px;
         position: absolute;
         background-color: $light-grey;
-        margin: -380px 0 0 5%;
+        margin: -270px 0 0 -10%;
+        padding: 0;
 
         & h1 {
             font-size: 80px;
@@ -378,12 +383,12 @@ header {
     
     nav {
         & .desktop-input {
-            margin: 250px 0 0 5%;
+            margin: 350px 0 0 5%;
         }
     }
     
     .explore {
-        margin: -380px 0 0 5%;
+        margin: -340px 0 0 -10%;
     
         & h1 {
             font-size: 60px;
@@ -466,12 +471,12 @@ header {
 @media screen and (max-width : #{$desktop-mid}) {
     nav {
         & .desktop-input {
-            margin: 250px 0 0 5%;
+            margin: 350px 0 0 5%;
         }
     }
     
     .explore {
-        margin: -380px 0 0 5%;
+        margin: -340px 0 0 -5%;
     
         & h1 {
             font-size: 60px;
@@ -554,10 +559,11 @@ header {
 @media screen and (max-width : #{$desktop-small}) {    
     nav {
         & img {
-            height: 40px;
+            width: 20%;
         }
+        
         & .desktop-input {
-            margin: 210px 0 0 5%;
+            margin: 320px 0 0 5%;
             & i {
                 height: 90px;
                 width: 90px;
@@ -577,7 +583,7 @@ header {
     .explore {
         position: absolute;
         background-color: $light-grey;
-        margin: -390px 0 0 5%;
+        margin: -350px 0 0 -5%;
     
         & h1 {
             font-size: 50px;

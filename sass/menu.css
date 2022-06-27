@@ -16,6 +16,24 @@
   }
 }
 
+@-webkit-keyframes moove-out {
+  from {
+    margin-right: 0%;
+  }
+  to {
+    margin-right: -15%;
+  }
+}
+
+@keyframes moove-out {
+  from {
+    margin-right: 0%;
+  }
+  to {
+    margin-right: -15%;
+  }
+}
+
 @-webkit-keyframes slide-up-menu {
   from {
     opacity: 0;
@@ -287,6 +305,8 @@ a {
         -ms-flex-direction: row;
             flex-direction: row;
     margin-right: -16%;
+    -webkit-animation: moove-out 0.5s ease forwards;
+            animation: moove-out 0.5s ease forwards;
   }
   main section .menu article .moove .dish-price {
     position: relative;
@@ -334,6 +354,10 @@ a {
     font-size: 40px;
     background-color: white;
     color: #99E2D0;
+    -webkit-transform: rotate(-360deg);
+            transform: rotate(-360deg);
+    -webkit-transition-duration: 1s;
+            transition-duration: 1s;
   }
   main section .menu .order-input {
     display: -webkit-box;
@@ -672,7 +696,7 @@ a {
     margin: 15px 0 0 3%;
   }
   main section .menu article .moove {
-    margin-right: -20%;
+    margin-left: 30%;
   }
   main section .menu article .moove .dish-price {
     font-size: 18px;

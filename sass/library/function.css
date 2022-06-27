@@ -16,6 +16,24 @@
   }
 }
 
+@-webkit-keyframes moove-out {
+  from {
+    margin-right: 0%;
+  }
+  to {
+    margin-right: -30%;
+  }
+}
+
+@keyframes moove-out {
+  from {
+    margin-right: 0%;
+  }
+  to {
+    margin-right: -30%;
+  }
+}
+
 @-webkit-keyframes slide-up-menu {
   from {
     opacity: 0;

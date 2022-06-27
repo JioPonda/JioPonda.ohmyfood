@@ -93,295 +93,268 @@ a {
   color: black;
 }
 
-nav {
-  padding: 30px 0px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  height: 100%;
-  width: 100%;
-  background-color: #f2f2f2;
-}
-
-nav i {
-  font-size: 80px;
-  margin-left: 250%;
-  margin-top: 15px;
-}
-
-nav img {
-  margin-top: 5px;
-  margin-left: 30%;
-  height: 100px;
-  width: auto;
-}
-
-main {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  overflow: hidden;
-}
-
-main img {
-  height: 850px;
-  width: 100%;
-  margin-top: -15px;
-}
-
-main section {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  width: 100%;
-  background-color: #f2f2f2;
-  margin-top: -105px;
-  border-top-left-radius: 120px;
-  border-top-right-radius: 120px;
-}
-
-main section .restaurant-name {
-  margin-left: 5%;
-  width: 100%;
-}
-
-main section .restaurant-name h1 {
-  font-family: 'Shrikhand';
-  font-size: 70px;
-  margin-top: 40px;
-}
-
-main section .restaurant-name .heart-empty {
-  position: absolute;
-  font-size: 70px;
-  margin: -150px 0 0 80%;
-  padding: 1%;
-}
-
-main section .restaurant-name .heart-full {
-  position: absolute;
-  font-size: 75px;
-  margin: -152px 0 0 79.9%;
-  padding: 1%;
-  background: -webkit-linear-gradient(#9356DC, #d26adb, #ec73da);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  opacity: 0;
-}
-
-main section .restaurant-name .heart-full:hover {
-  opacity: 1;
-  -webkit-transition-duration: 0.3s;
-          transition-duration: 0.3s;
-}
-
-main section .menu {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  margin-left: 5%;
-}
-
-main section .menu .step {
-  font-size: 50px;
-  font-weight: 100;
-  text-transform: uppercase;
-}
-
-main section .menu .border {
-  height: 10px;
-  width: 8%;
-  background-color: #99E2D0;
-  margin: -50px 0% 25px 0%;
-}
-
-main section .menu article {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-}
-
-main section .menu article .dish-card {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  background-color: white;
-  overflow: hidden;
-  height: 150px;
-  width: 45%;
-  border-radius: 40px;
-  margin: 50px 2%;
-}
-
-main section .menu article .dish-card:hover {
-  -webkit-box-shadow: 7px 7px 7px #a4a4a4;
-          box-shadow: 7px 7px 7px #a4a4a4;
-}
-
-main section .menu article .dish-card:hover .moove {
-  -webkit-animation: moove 0.5s ease forwards;
-          animation: moove 0.5s ease forwards;
-}
-
-main section .menu article .dish-card:hover .moove i {
-  -webkit-transform: rotate(360deg);
-          transform: rotate(360deg);
-  -webkit-transition-duration: 0.5s;
-          transition-duration: 0.5s;
-}
-
-main section .menu article .dish-infos {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  height: 100%;
-  width: 100%;
-  position: relative;
-}
-
-main section .menu article .dish-infos .dish-name {
-  font-size: 41px;
-  margin: 15px 0 0 3%;
-  overflow: hidden;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-}
-
-main section .menu article .dish-infos .dish-ingredient {
-  font-size: 32px;
-  overflow: hidden;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  margin: 7px 0 0 3%;
-}
-
-main section .menu article .moove {
-  width: 30%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  margin-right: -16%;
-}
-
-main section .menu article .moove .dish-price {
-  position: relative;
-  font-size: 35px;
-  width: 50%;
-  height: 155px;
-  font-weight: bold;
-  margin: 0 0 0 0%;
-}
-
-main section .menu article .moove .dish-price p {
-  margin: 75px 0 0 0%;
-}
-
-main section .menu article .moove .check {
-  overflow: hidden;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  height: 155px;
-  width: 155px;
-  background-color: #99E2D0;
-}
-
-main section .menu article .moove .check i {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  height: 60px;
-  width: 60px;
-  border-radius: 35px;
-  font-size: 40px;
-  background-color: white;
-  color: #99E2D0;
-}
-
-main section .menu .order-input {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  width: 40%;
-  height: 120px;
-  color: #fff;
-  background: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), color-stop(#d26adb), to(#9356DC));
-  background: linear-gradient(#FF79DA, #d26adb, #9356DC);
-  font-size: 40px;
-  border-radius: 60px;
-  -webkit-box-shadow: 7px 7px 7px lightgray;
-          box-shadow: 7px 7px 7px lightgray;
-  margin: 35px 0% 75px 25%;
-}
-
-main section .menu .order-input p {
-  text-align: center;
-  font-weight: 900;
-}
-
-main section .menu .order-input:hover {
-  -webkit-box-shadow: 7px 7px 7px #a4a4a4;
-          box-shadow: 7px 7px 7px #a4a4a4;
-  background: -webkit-gradient(linear, left top, left bottom, from(#ee81de), color-stop(#d678de), to(#a878e3));
-  background: linear-gradient(#ee81de, #d678de, #a878e3);
+@media screen and (max-width: 1920px) {
+  nav {
+    padding: 30px 0px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    height: 100%;
+    width: 100%;
+    background-color: #f2f2f2;
+  }
+  nav i {
+    font-size: 80px;
+    margin-left: 250%;
+    margin-top: 15px;
+  }
+  nav img {
+    margin-top: 5px;
+    margin-left: 30%;
+    height: 100px;
+    width: auto;
+  }
+  main {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    overflow: hidden;
+  }
+  main img {
+    height: 850px;
+    width: 100%;
+    margin-top: -15px;
+  }
+  main section {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+    background-color: #f2f2f2;
+    margin-top: -105px;
+    border-top-left-radius: 120px;
+    border-top-right-radius: 120px;
+  }
+  main section .restaurant-name {
+    margin-left: 5%;
+    width: 100%;
+  }
+  main section .restaurant-name h1 {
+    font-family: 'Shrikhand';
+    font-size: 70px;
+    margin-top: 40px;
+  }
+  main section .restaurant-name .heart-empty {
+    position: absolute;
+    font-size: 70px;
+    margin: -150px 0 0 80%;
+    padding: 1%;
+  }
+  main section .restaurant-name .heart-full {
+    position: absolute;
+    font-size: 75px;
+    margin: -152px 0 0 79.9%;
+    padding: 1%;
+    background: -webkit-linear-gradient(#9356DC, #d26adb, #ec73da);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    opacity: 0;
+  }
+  main section .restaurant-name .heart-full:hover {
+    opacity: 1;
+    -webkit-transition-duration: 0.3s;
+            transition-duration: 0.3s;
+  }
+  main section .menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin-left: 5%;
+  }
+  main section .menu .step {
+    font-size: 50px;
+    font-weight: 100;
+    text-transform: uppercase;
+  }
+  main section .menu .border {
+    height: 10px;
+    width: 8%;
+    background-color: #99E2D0;
+    margin: -50px 0% 25px 0%;
+  }
+  main section .menu article {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  main section .menu article .dish-card {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    background-color: white;
+    overflow: hidden;
+    height: 150px;
+    width: 45%;
+    border-radius: 40px;
+    margin: 50px 2%;
+  }
+  main section .menu article .dish-card:hover {
+    -webkit-box-shadow: 7px 7px 7px #a4a4a4;
+            box-shadow: 7px 7px 7px #a4a4a4;
+  }
+  main section .menu article .dish-card:hover .moove {
+    -webkit-animation: moove 0.5s ease forwards;
+            animation: moove 0.5s ease forwards;
+  }
+  main section .menu article .dish-card:hover .moove i {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+    -webkit-transition-duration: 0.5s;
+            transition-duration: 0.5s;
+  }
+  main section .menu article .dish-infos {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: 100%;
+    width: 100%;
+    position: relative;
+  }
+  main section .menu article .dish-infos .dish-name {
+    font-size: 39px;
+    margin: 15px 0 0 3%;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+  main section .menu article .dish-infos .dish-ingredient {
+    font-size: 32px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    margin: 7px 0 0 3%;
+  }
+  main section .menu article .moove {
+    width: 30%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    margin-right: -16%;
+  }
+  main section .menu article .moove .dish-price {
+    position: relative;
+    font-size: 35px;
+    width: 50%;
+    height: 155px;
+    font-weight: bold;
+    margin: 0 0 0 0%;
+  }
+  main section .menu article .moove .dish-price p {
+    margin: 75px 0 0 0%;
+  }
+  main section .menu article .moove .check {
+    overflow: hidden;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 155px;
+    width: 155px;
+    background-color: #99E2D0;
+  }
+  main section .menu article .moove .check i {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 60px;
+    width: 60px;
+    border-radius: 35px;
+    font-size: 40px;
+    background-color: white;
+    color: #99E2D0;
+  }
+  main section .menu .order-input {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 40%;
+    height: 120px;
+    color: #fff;
+    background: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), color-stop(#d26adb), to(#9356DC));
+    background: linear-gradient(#FF79DA, #d26adb, #9356DC);
+    font-size: 40px;
+    border-radius: 60px;
+    -webkit-box-shadow: 7px 7px 7px lightgray;
+            box-shadow: 7px 7px 7px lightgray;
+    margin: 35px 0% 75px 25%;
+  }
+  main section .menu .order-input p {
+    text-align: center;
+    font-weight: 900;
+  }
+  main section .menu .order-input:hover {
+    -webkit-box-shadow: 7px 7px 7px #a4a4a4;
+            box-shadow: 7px 7px 7px #a4a4a4;
+    background: -webkit-gradient(linear, left top, left bottom, from(#ee81de), color-stop(#d678de), to(#a878e3));
+    background: linear-gradient(#ee81de, #d678de, #a878e3);
+  }
 }
 
 footer {
@@ -558,7 +531,7 @@ footer a {
     margin: 40px 2%;
   }
   main section .menu article .dish-infos .dish-name {
-    font-size: 28px;
+    font-size: 26px;
     margin: 26px 0 0 3%;
   }
   main section .menu article .dish-infos .dish-ingredient {
@@ -656,7 +629,7 @@ footer a {
     margin: 40px 2%;
   }
   main section .menu article .dish-infos .dish-name {
-    font-size: 21px;
+    font-size: 20px;
     margin: 33px 0 0 3%;
   }
   main section .menu article .dish-infos .dish-ingredient {
