@@ -110,262 +110,265 @@ header {
     background-color: $light-grey;
 }
 
-nav {
-    height: 500px;
-    width: 100%;
-    & img {
-        height: 50px;
-        width: auto;
-        margin: 50px 0 0 4%;
-    }
-
-    & .desktop-input {
-        display: flex;
-        flex-direction: row;
-        position: absolute;
-        margin: 320px 0 0 5%;
-
-        & i {
-            display: flex;
-            @include all-center;
-            height: 100px;
-            width: 100px;
-            border-radius: 15px;
-            position: relative;
-            font-size: 50px;
-            background: linear-gradient(#ec73da,#d26adb,#{$primary-color});
-        }
-
-        & input {
-            font-size: 30px;
-            font-weight: bold;
-            text-align: center;
-            margin: 0 2% 0 2%;
-            width: 650px;
-            height: 100px;
-            border-radius: 15px;
-            border-color: white;
-        }
-
-        & .search-button {
-            height: 100px;
-            width: 200px;
-            display: flex;
-            @include all-center;
-            @include light-shadow;
-            color: white;
-            border-radius: 15px;
-            font-size: 40px;
-            font-weight: bold;
-            border-color: $primary-color;
-            background: linear-gradient(#ec73da,#d26adb,#{$primary-color});
-            &:hover {
-                @include shadow;
-            }
-        }
-    }
-
-    & .mobil-input {
-        display : none;
-    }
-
+@media screen and (max-width: 1920px) {
     
-}
-
-.explore {
-    position: absolute;
-    background-color: $light-grey;
-    margin: -380px 0 0 5%;
-
-    & h1 {
-        font-size: 80px;
-        font-weight: bold;
-    }
-
-    & p {
-        margin-top: -50px;
-        font-weight: 100;
-        font-size: 46px;
-    }
-
-    & a {
-        display: none;
-    }
-}
-
-.fonctionnement {
-    display: flex;
-    flex-direction: row;
-    margin : 150px 0 0 -3%;
-    background-color: #fff;
-    & h2 {
-        margin-top: 75px;
-        @include principal-title;
-    }
-}
-
-.etape {
-    display: flex;
-    flex-direction: row;
-    height: 100px;
-    width: 20%;
-    @include all-center;
-    background-color: #f6f6f6;
-    border-radius: 50px;
-    @include light-shadow;
-    margin: 56px 0% 15px 4%;
-    &:hover {
-        background-color: lighten($color: $primary-color, $amount: 35);
-        @include shadow;
-        & i {
-            color: $primary-color;
-        }
-    }
-
-    &_number {
-        display: flex;
-        @include all-center;
-        position: absolute;
-        margin-right: 20%;
-        color: #fff;
-        height: 50px;
-        width: 50px;
-        font-size: 30px;
-        background-color: $primary-color;
-        border-radius: 50px;
-    }
-
-    & i {
-        position: absolute;
-        margin-right: 14%;
-        color: grey;
-        font-size: 40px;
-    }
-
-    &_txt {
-        margin-right: -15%;
-        font-size: 25px;
-        font-weight: bold;
-    }
-}
-
-main {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    background-color: $light-grey;
-    padding: 5% 0 5% 0;
-    margin-top: 50px;
-
-    & h2 {
-        position: absolute;
-        @include principal-title;
-        margin-left: 2%;
-        margin-top: -50px;
-    }
-
-    & article {
-        display: flex;
-        @include all-center;
+    nav {
         height: 500px;
-        width: 40%;
-        overflow: hidden;
-        background-color: white;
-        margin: 5% 0 5% 6%;
-        border-radius: 50px;
-        @include light-shadow;
-        &:hover{
-            @include shadow;
+        width: 100%;
+        & img {
+            height: 50px;
+            width: auto;
+            margin: 50px 0 0 4%;
         }
 
-        & a {
-            @include full-size
-        }
-
-        & .New {
+        & .desktop-input {
+            display: flex;
+            flex-direction: row;
             position: absolute;
-            font-weight: bolder;
-            color: darken($color: $third-color, $amount: 40);
-            background-color: $third-color;
-            padding: 0.5%;
-            font-size: 35px;
-            margin-top: 40px;
-            margin-left: 30%;
-        }
+            margin: 320px 0 0 5%;
 
-        & .New-hide {
-            display: none;
-        }
-
-        & .img-container {
-            height: 75%;
-            width: 100%;
-            & img {
-                @include full-size
+            & i {
+                display: flex;
+                @include all-center;
+                height: 100px;
+                width: 100px;
+                border-radius: 15px;
+                position: relative;
+                font-size: 50px;
+                background: linear-gradient(#ec73da,#d26adb,#{$primary-color});
             }
-        }
 
-        & .card-infos {
-            font-size: 35px;
-            margin: -30px 0 0 3%;
-            
-            & .city {
-                margin-top: -28px;
+            & input {
+                font-size: 30px;
+                font-weight: bold;
+                text-align: center;
+                margin: 0 2% 0 2%;
+                width: 650px;
+                height: 100px;
+                border-radius: 15px;
+                border-color: white;
             }
-            
 
-            & .heart-empty {
-                position: absolute;
-                display: block;
-                font-size: 70px;
-                margin: -145px 0 0 30%;
-                padding: 1%;
-                opacity: 1;
-
-            }
-            & .heart-full {
-                position: absolute;
-                color: $primary-color;
-                display: block;
-                font-size: 73px;
-                margin: -147px 0 0 29.9%;
-                padding: 1%;
-                @include gradient-heart;
-                z-index: 1;
-                opacity: 0;
+            & .search-button {
+                height: 100px;
+                width: 200px;
+                display: flex;
+                @include all-center;
+                @include light-shadow;
+                color: white;
+                border-radius: 15px;
+                font-size: 40px;
+                font-weight: bold;
+                border-color: $primary-color;
+                background: linear-gradient(#ec73da,#d26adb,#{$primary-color});
                 &:hover {
-                    transition-duration: 0.2s;
-                    opacity: 1
+                    @include shadow;
                 }
             }
         }
+
+        & .mobil-input {
+            display : none;
+        }
+
+        
     }
 
-}
+    .explore {
+        position: absolute;
+        background-color: $light-grey;
+        margin: -380px 0 0 5%;
 
-footer {
-    @include column;
-    width: 100%;
-    background-color: #353535;
-    font-size: 40px;
-    & h2 {
-        font-family: 'Shrikhand';
-        color: white;
-        font-size: 60px;
-        margin : 25px 0 0 4%;
+        & h1 {
+            font-size: 80px;
+            font-weight: bold;
+        }
+
+        & p {
+            margin-top: -50px;
+            font-weight: 100;
+            font-size: 46px;
+        }
+
+        & a {
+            display: none;
+        }
     }
 
-    & ul {
-        margin-top: 15px;
-        margin-left: 5%;
+    .fonctionnement {
+        display: flex;
+        flex-direction: row;
+        margin : 150px 0 0 -3%;
+        background-color: #fff;
+        & h2 {
+            margin-top: 75px;
+            @include principal-title;
+        }
     }
 
-    & li {
-        padding: 1% 0 1% 0;
+    .etape {
+        display: flex;
+        flex-direction: row;
+        height: 100px;
+        width: 20%;
+        @include all-center;
+        background-color: #f6f6f6;
+        border-radius: 50px;
+        @include light-shadow;
+        margin: 56px 0% 15px 4%;
+        &:hover {
+            background-color: lighten($color: $primary-color, $amount: 35);
+            @include shadow;
+            & i {
+                color: $primary-color;
+            }
+        }
+
+        &_number {
+            display: flex;
+            @include all-center;
+            position: absolute;
+            margin-right: 20%;
+            color: #fff;
+            height: 50px;
+            width: 50px;
+            font-size: 30px;
+            background-color: $primary-color;
+            border-radius: 50px;
+        }
+
+        & i {
+            position: absolute;
+            margin-right: 14%;
+            color: grey;
+            font-size: 40px;
+        }
+
+        &_txt {
+            margin-right: -15%;
+            font-size: 25px;
+            font-weight: bold;
+        }
     }
 
-    & a {
-        color: white;
+    main {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        background-color: $light-grey;
+        padding: 5% 0 5% 0;
+        margin-top: 50px;
+
+        & h2 {
+            position: absolute;
+            @include principal-title;
+            margin-left: 2%;
+            margin-top: -50px;
+        }
+
+        & article {
+            display: flex;
+            @include all-center;
+            height: 500px;
+            width: 40%;
+            overflow: hidden;
+            background-color: white;
+            margin: 5% 0 5% 6%;
+            border-radius: 50px;
+            @include light-shadow;
+            &:hover{
+                @include shadow;
+            }
+
+            & a {
+                @include full-size
+            }
+
+            & .New {
+                position: absolute;
+                font-weight: bolder;
+                color: darken($color: $third-color, $amount: 40);
+                background-color: $third-color;
+                padding: 0.5%;
+                font-size: 35px;
+                margin-top: 40px;
+                margin-left: 30%;
+            }
+
+            & .New-hide {
+                display: none;
+            }
+
+            & .img-container {
+                height: 75%;
+                width: 100%;
+                & img {
+                    @include full-size
+                }
+            }
+
+            & .card-infos {
+                font-size: 35px;
+                margin: -30px 0 0 3%;
+                
+                & .city {
+                    margin-top: -28px;
+                }
+                
+
+                & .heart-empty {
+                    position: absolute;
+                    display: block;
+                    font-size: 70px;
+                    margin: -145px 0 0 30%;
+                    padding: 1%;
+                    opacity: 1;
+
+                }
+                & .heart-full {
+                    position: absolute;
+                    color: $primary-color;
+                    display: block;
+                    font-size: 73px;
+                    margin: -147px 0 0 29.9%;
+                    padding: 1%;
+                    @include gradient-heart;
+                    z-index: 1;
+                    opacity: 0;
+                    &:hover {
+                        transition-duration: 0.2s;
+                        opacity: 1
+                    }
+                }
+            }
+        }
+
+    }
+
+    footer {
+        @include column;
+        width: 100%;
+        background-color: #353535;
+        font-size: 40px;
+        & h2 {
+            font-family: 'Shrikhand';
+            color: white;
+            font-size: 60px;
+            margin : 25px 0 0 4%;
+        }
+
+        & ul {
+            margin-top: 15px;
+            margin-left: 5%;
+        }
+
+        & li {
+            padding: 1% 0 1% 0;
+        }
+
+        & a {
+            color: white;
+        }
     }
 }
 
