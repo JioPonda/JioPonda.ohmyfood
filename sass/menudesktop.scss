@@ -2,6 +2,8 @@
 
 @for $i from 1 through 4 {
     .card-#{$i} {
+        animation: slide-up-menu 1s 0.4s*$i ease;
+        animation-fill-mode: both;
         @include light-shadow;   
     }
 }
@@ -137,6 +139,7 @@ a {
                         margin: 50px 2%;
                         &:hover {
                             @include shadow;
+                            cursor: pointer;
                         }
                         &:hover .moove{
                             animation: moove 0.5s ease forwards;
@@ -173,6 +176,7 @@ a {
                         display: flex;
                         flex-direction: row;
                         margin-right: -16%;
+                        animation : moove-out 0.5s ease-in-out backwards;
                     & .dish-price {
                         position: relative;
                         font-size: 35px;
@@ -344,7 +348,8 @@ footer {
     
                     & .moove {
                         width: 26%;
-                        margin-right: -17%;
+                        margin-right: -18%;
+                        animation : moove-out1440 0.5s ease-in-out backwards;
                     & .dish-price {
                         font-size: 30px;
                         width: 50%;
@@ -450,7 +455,7 @@ footer {
                         height: 130px;
                         margin: 0 0 0 0%;
                         & p {
-                            margin: 75px 0 0 -20%;
+                            margin: 68px 0 0 -25%;
                         }
                     }
                     

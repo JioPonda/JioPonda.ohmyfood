@@ -64,7 +64,27 @@ $mobil-small : 320px;
     }
 
     to {
-        margin-right: -30%;
+        margin-right: -16%;
+    }
+}
+
+@keyframes moove-out1440 {
+    from {
+        margin-right: 0%;
+    }
+
+    to {
+        margin-right: -18%;
+    }
+}
+
+@keyframes moove-out820 {
+    from {
+        margin-right: 0%;
+    }
+
+    to {
+        margin-right: -20%;
     }
 }
 

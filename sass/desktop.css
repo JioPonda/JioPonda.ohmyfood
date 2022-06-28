@@ -16,6 +16,24 @@
   }
 }
 
+@-webkit-keyframes moove-out {
+  from {
+    margin-right: 0%;
+  }
+  to {
+    margin-right: -30%;
+  }
+}
+
+@keyframes moove-out {
+  from {
+    margin-right: 0%;
+  }
+  to {
+    margin-right: -30%;
+  }
+}
+
 @-webkit-keyframes slide-up-menu {
   from {
     opacity: 0;
@@ -392,7 +410,7 @@ header {
     font-size: 40px;
   }
   .etape_txt {
-    margin-right: -15%;
+    margin-right: -5%;
     font-size: 25px;
     font-weight: bold;
   }
@@ -572,7 +590,7 @@ header {
     font-size: 35px;
   }
   .etape_txt {
-    margin-right: -18%;
+    margin-right: -5%;
     font-size: 20px;
   }
   main h2 {
@@ -645,7 +663,7 @@ header {
     font-size: 35px;
   }
   .etape_txt {
-    margin-right: -20%;
+    margin-right: -5%;
     font-size: 18px;
   }
   main h2 {
@@ -738,7 +756,7 @@ header {
     font-size: 30px;
   }
   .etape_txt {
-    margin-right: -22%;
+    margin-right: -6%;
     font-size: 15px;
   }
   main {

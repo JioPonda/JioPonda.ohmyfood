@@ -16,6 +16,42 @@
   }
 }
 
+@-webkit-keyframes moove-out {
+  from {
+    margin-right: 0%;
+  }
+  to {
+    margin-right: -16%;
+  }
+}
+
+@keyframes moove-out {
+  from {
+    margin-right: 0%;
+  }
+  to {
+    margin-right: -16%;
+  }
+}
+
+@-webkit-keyframes moove-out1440 {
+  from {
+    margin-right: 0%;
+  }
+  to {
+    margin-left: 18%;
+  }
+}
+
+@keyframes moove-out1440 {
+  from {
+    margin-right: 0%;
+  }
+  to {
+    margin-left: 18%;
+  }
+}
+
 @-webkit-keyframes slide-up-menu {
   from {
     opacity: 0;
@@ -41,21 +77,37 @@
 }
 
 .card-1 {
+  -webkit-animation: slide-up-menu 1s 0.4s ease;
+          animation: slide-up-menu 1s 0.4s ease;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
   -webkit-box-shadow: 7px 7px 7px lightgray;
           box-shadow: 7px 7px 7px lightgray;
 }
 
 .card-2 {
+  -webkit-animation: slide-up-menu 1s 0.8s ease;
+          animation: slide-up-menu 1s 0.8s ease;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
   -webkit-box-shadow: 7px 7px 7px lightgray;
           box-shadow: 7px 7px 7px lightgray;
 }
 
 .card-3 {
+  -webkit-animation: slide-up-menu 1s 1.2s ease;
+          animation: slide-up-menu 1s 1.2s ease;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
   -webkit-box-shadow: 7px 7px 7px lightgray;
           box-shadow: 7px 7px 7px lightgray;
 }
 
 .card-4 {
+  -webkit-animation: slide-up-menu 1s 1.6s ease;
+          animation: slide-up-menu 1s 1.6s ease;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
   -webkit-box-shadow: 7px 7px 7px lightgray;
           box-shadow: 7px 7px 7px lightgray;
 }
@@ -229,6 +281,7 @@ a {
   main section .menu article .dish-card:hover {
     -webkit-box-shadow: 7px 7px 7px #a4a4a4;
             box-shadow: 7px 7px 7px #a4a4a4;
+    cursor: pointer;
   }
   main section .menu article .dish-card:hover .moove {
     -webkit-animation: moove 0.5s ease forwards;
@@ -276,6 +329,8 @@ a {
         -ms-flex-direction: row;
             flex-direction: row;
     margin-right: -16%;
+    -webkit-animation: moove-out 0.5s ease-in-out backwards;
+            animation: moove-out 0.5s ease-in-out backwards;
   }
   main section .menu article .moove .dish-price {
     position: relative;
@@ -460,7 +515,9 @@ footer a {
   }
   main section .menu article .moove {
     width: 26%;
-    margin-right: -17%;
+    margin-right: -18%;
+    -webkit-animation: moove-out1440 0.5s ease-in-out backwards;
+            animation: moove-out1440 0.5s ease-in-out backwards;
   }
   main section .menu article .moove .dish-price {
     font-size: 30px;
@@ -549,7 +606,7 @@ footer a {
     margin: 0 0 0 0%;
   }
   main section .menu article .moove .dish-price p {
-    margin: 75px 0 0 -20%;
+    margin: 68px 0 0 -25%;
   }
   main section .menu article .moove .check {
     height: 130px;

@@ -203,12 +203,9 @@ a {
                             border-radius: 35px;
                             font-size: 40px;
                             background-color: white;
-                            color: $third-color;        
-                            transform: rotate(-360deg);
-                            transition-duration: 1s;
+                            color: $third-color;
                             }                        
                         }
-
                     }
                 }
                 
@@ -308,6 +305,7 @@ a {
 
                     & .moove {
                         margin-right: -18%;
+                        animation: moove-out820 0.8s ease forwards;
                     }
                 }
             }    
