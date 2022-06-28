@@ -39,7 +39,7 @@
     margin-right: 0%;
   }
   to {
-    margin-left: 18%;
+    margin-right: -18%;
   }
 }
 
@@ -48,7 +48,25 @@
     margin-right: 0%;
   }
   to {
-    margin-left: 18%;
+    margin-right: -18%;
+  }
+}
+
+@-webkit-keyframes moove-out820 {
+  from {
+    margin-right: 0%;
+  }
+  to {
+    margin-right: -20%;
+  }
+}
+
+@keyframes moove-out820 {
+  from {
+    margin-right: 0%;
+  }
+  to {
+    margin-right: -20%;
   }
 }
 
