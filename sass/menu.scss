@@ -2,7 +2,7 @@
 
 @for $i from 1 through 4 {
     .card-#{$i} {
-        animation: slide-up-menu 0.8s 0.2s*$i ease;
+        animation: slide-up-menu 1s 0.4s*$i ease;
         animation-fill-mode: both;
         @include light-shadow;   
     }
@@ -305,7 +305,7 @@ a {
 
                     & .moove {
                         margin-right: -18%;
-                        animation: moove-out820 0.8s ease forwards;
+                        animation: moove-out1440 0.5s ease-in-out backwards;
                     }
                 }
             }    
@@ -431,6 +431,7 @@ a {
 
                     & .moove {
                         margin-right: -21%;
+                        animation: moove-out820 0.5s ease-in-out backwards;
                     & .dish-price {
                         font-size: 20px;
                         height: 105px;

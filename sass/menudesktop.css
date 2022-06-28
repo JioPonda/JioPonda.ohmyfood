@@ -347,8 +347,8 @@ a {
         -ms-flex-direction: row;
             flex-direction: row;
     margin-right: -16%;
-    -webkit-animation: moove-out 0.5s ease-in-out backwards;
-            animation: moove-out 0.5s ease-in-out backwards;
+    -webkit-animation: moove-out 0.5s ease forwards;
+            animation: moove-out 0.5s ease forwards;
   }
   main section .menu article .moove .dish-price {
     position: relative;

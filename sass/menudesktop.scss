@@ -176,7 +176,7 @@ a {
                         display: flex;
                         flex-direction: row;
                         margin-right: -16%;
-                        animation : moove-out 0.5s ease-in-out backwards;
+                        animation : moove-out 0.5s ease forwards;
                     & .dish-price {
                         position: relative;
                         font-size: 35px;

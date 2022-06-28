@@ -95,8 +95,8 @@
 }
 
 .card-1 {
-  -webkit-animation: slide-up-menu 0.8s 0.2s ease;
-          animation: slide-up-menu 0.8s 0.2s ease;
+  -webkit-animation: slide-up-menu 1s 0.4s ease;
+          animation: slide-up-menu 1s 0.4s ease;
   -webkit-animation-fill-mode: both;
           animation-fill-mode: both;
   -webkit-box-shadow: 7px 7px 7px lightgray;
@@ -104,8 +104,8 @@
 }
 
 .card-2 {
-  -webkit-animation: slide-up-menu 0.8s 0.4s ease;
-          animation: slide-up-menu 0.8s 0.4s ease;
+  -webkit-animation: slide-up-menu 1s 0.8s ease;
+          animation: slide-up-menu 1s 0.8s ease;
   -webkit-animation-fill-mode: both;
           animation-fill-mode: both;
   -webkit-box-shadow: 7px 7px 7px lightgray;
@@ -113,8 +113,8 @@
 }
 
 .card-3 {
-  -webkit-animation: slide-up-menu 0.8s 0.6s ease;
-          animation: slide-up-menu 0.8s 0.6s ease;
+  -webkit-animation: slide-up-menu 1s 1.2s ease;
+          animation: slide-up-menu 1s 1.2s ease;
   -webkit-animation-fill-mode: both;
           animation-fill-mode: both;
   -webkit-box-shadow: 7px 7px 7px lightgray;
@@ -122,8 +122,8 @@
 }
 
 .card-4 {
-  -webkit-animation: slide-up-menu 0.8s 0.8s ease;
-          animation: slide-up-menu 0.8s 0.8s ease;
+  -webkit-animation: slide-up-menu 1s 1.6s ease;
+          animation: slide-up-menu 1s 1.6s ease;
   -webkit-animation-fill-mode: both;
           animation-fill-mode: both;
   -webkit-box-shadow: 7px 7px 7px lightgray;
@@ -477,8 +477,8 @@ a {
   }
   main section .menu article .moove {
     margin-right: -18%;
-    -webkit-animation: moove-out820 0.8s ease forwards;
-            animation: moove-out820 0.8s ease forwards;
+    -webkit-animation: moove-out1440 0.5s ease-in-out backwards;
+            animation: moove-out1440 0.5s ease-in-out backwards;
   }
 }
 
@@ -567,6 +567,8 @@ a {
   }
   main section .menu article .moove {
     margin-right: -21%;
+    -webkit-animation: moove-out820 0.5s ease-in-out backwards;
+            animation: moove-out820 0.5s ease-in-out backwards;
   }
   main section .menu article .moove .dish-price {
     font-size: 20px;
