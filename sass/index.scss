@@ -192,7 +192,7 @@ nav {
 
         &:hover {
             @include shadow;
-            background: linear-gradient(hsl(309, 76%, 72%),hsl(295, 61%, 67%), hsl(267, 66%, 68%))
+            background: linear-gradient(hsl(309, 76%, 72%),hsl(295, 61%, 67%), hsl(267, 66%, 68%));
         }
     }
 }
